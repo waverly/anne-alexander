@@ -1,0 +1,30 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+.about{
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.text-wrap{
+  position: relative;
+  width: 500px;
+  margin: auto;
+  padding-top: $margin-top;
+}
+
+.about-block{
+  margin: 5rem 0rem;
+}
+
+.about-text{
+  p{
+    @include p();
+    margin-top: $margin-top-p;
+    &:nth-child(1){
+      margin-top: 0;
+    }
+  }
+}

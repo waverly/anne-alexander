@@ -1,0 +1,21 @@
+<div class="detail-wrap">
+  <div class="detail" *ngIf="detail">
+    <div class="iframe-container">
+      <iframe  class="video" [src]="detail.data['portfolio-video'].video_link.value.url | UrlPipe" frameborder="0" allowfullscreen>></iframe>
+    </div>
+
+    <div class="text-wrap">
+      <div class="left-text">
+        <h3>{{detail.data["portfolio-video"]?.video_title.value["0"].text}}</h3>
+        <h3>{{detail.data["portfolio-video"]?.video_year.value["0"].text}}</h3>
+      </div>
+
+      <div class="right-text">
+        <h3>{{detail.data["portfolio-video"]?.director_credits.value["0"].text}}</h3>
+        <h3>{{detail.data["portfolio-video"]?.dp_credits.value["0"].text}}</h3>
+        <h3>{{detail.data["portfolio-video"]?.producer_credits.value["0"].text}}</h3>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,93 @@
+/*....................................SCSS VARIABLES..................................*/
+
+
+// ........................................................FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 900;
+
+
+// ........................................................FONT SIZES
+$font-size-h1:30px;
+$font-size-h2:22px;
+$font-size-h3:14px;
+$font-size-p: 10px;
+
+$font-size-h1-mobile: 25px;
+$font-size-h2-mobile: 20px;
+$font-size-h3-mobile: 18px;
+$font-size-p-mobile: 12px;
+
+// ........................................................FONT FAMILIES
+$font-family-h1: 'avus';
+$font-family-h2: 'avus';
+$font-family-h3: 'avus';
+$font-family-p: helvetica;
+
+
+
+// ........................................................FONT LINEHEIGHTS
+$line-height-h1: 50px;
+$line-height-h2: 36px;
+$line-height-h3: 30px;
+$line-height-p: 26px;
+
+$line-height-h1-mobile: 40px;
+$line-height-h2-mobile: 36px;
+$line-height-h3-mobile: 20px;
+$line-height-p-mobile: 17px;
+
+
+$letter-spacing: 1px;
+$letter-spacing-h1: 2px;
+$letter-spacing-h2: 0px;
+$letter-spacing-h3: 1px;
+$letter-spacing-paragraph:1px;
+
+
+// ........................................................COLORS
+
+$red:#FF3700;
+$black:#000;
+$white:#FFF;
+$light-grey:#F0F0F0;
+$dark-grey:#272626;
+$electric-blue:#00C8FF;
+
+// ........................................................MARGINS
+$margin-sides: 25px;
+$margin-bottom: 35px;
+$margin-top: 150px;
+$margin-sides-mobile:10px;
+$margin-left-paragraph:5px;
+$margin-top-li:100px;
+$margin-top-p:20px;
+
+// ........................................................TRANSITION TIMINGS
+$transition-extreme-slow: 1.4s;
+$transition-slow: .6s;
+$transition-medium: .4s;
+$transition-fast: .2s;
+
+
+
+// ........................................................Z-INDEXES
+$z-nav:15;
+$z-svg:13;
+
+$z-clickOut: 12;
+// $z-nav:10;
+$z-credits:8;
+$z-feed:7;
+
+$z-detail-li:4;
+$z-detail-cover:3;
+
+
+
+$z-logo:0;
+
+
+
+
+/*....................................................................................*/

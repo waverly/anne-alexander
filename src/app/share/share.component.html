@@ -1,0 +1,16 @@
+<div class="share">
+  <h2 class="share-button" (click)="openShare()" [class.blacked_text]="_globalService.isStyling">share</h2>
+
+  <ul [class.share_open]="isShare" [@shareState]="isShare" class="share-ul">
+    <li class="share-li" (click)="openShare()">
+      <a [attr.href]="'https://twitter.com/intent/tweet?url='+encodedRoute" target="_blank" [class.blacked_text]="_globalService.isStyling">tw</a>
+    </li>
+    <li class="share-li" (click)="openShare()">
+      <a [attr.href]="'http://www.tumblr.com/share/link?url='+encodedRoute" target="_blank" [class.blacked_text]="_globalService.isStyling">tm</a>
+    </li>
+    <li class="share-li" (click)="openShare()">
+      <a [attr.href]="'https://www.facebook.com/sharer/sharer.php?u='+encodedRoute" target="_blank" [class.blacked_text]="_globalService.isStyling">fb</a>
+    </li>
+  </ul>
+
+</div>

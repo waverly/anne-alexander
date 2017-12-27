@@ -1,0 +1,36 @@
+<div class="about" *ngIf="feed">
+  <div class="text-wrap">
+
+    <div class="about-block">
+      <h2>Background</h2>
+      <div class="about-text">
+        <p>{{feed.results["0"].data.information.background.value["0"].text}}</p>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h2>{{feed.results["0"].data.information.body.value["0"]["non-repeat"]["section-title"].value["0"].text}}</h2>
+      <div class="about-list">
+        <ul>
+          <li *ngFor="let item of feed.results['0'].data.information.body.value['0'].repeat">
+            {{ item["client-name"].value["0"].text }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h2>{{feed.results["0"].data.information.body.value[1]["non-repeat"]["section-title"].value["0"].text}}</h2>
+      <div class="about-list">
+        <ul>
+          <li *ngFor="let item of feed.results['0'].data.information.body.value[1].repeat">
+            <a [href]="item['contact-item'].value['0'].spans['0'].data.value.url">
+              {{ item["contact-item"].value["0"].text }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>

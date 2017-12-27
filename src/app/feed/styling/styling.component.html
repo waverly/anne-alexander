@@ -1,0 +1,26 @@
+<div class="styling">
+
+  <div class="styling-content" *ngIf="styling">
+    <ul class="styling-ul">
+      <li *ngFor='let s of styling.results' class="styling-li"
+      [style.left]="s.data['styling.position'].value[0].left.value+'vw'"
+      [style.top]="s.data['styling.position'].value[0].top.value+'vh'"
+      draggable>
+      <!-- on-mouseover='showBackgroundStyling(true)' on-mouseout="showBackgroundStyling(false)" -->
+      <!-- <img [src]="s.data['styling.cover'].value[0].image.value.main.url" alt="" class="styling-cover"
+      *ngIf="isBackgroundStyling"
+      > -->
+        <a [routerLink]="['/styling', s.uid]" class="styling-a">
+          <h1 class="styling-title" [style.font-size]="s.data['styling.position'].value[0].pixels.value+'px'">
+            {{s.data['styling.title'].value['0'].text}}
+          </h1>
+        </a>
+
+        <!-- [class.title_left]="s.data['styling.cover'].value[0].left.value>0"
+        [class.title_right]="s.data['styling.cover'].value[0].left.value==0" -->
+ <!-- | productFilter:listFilter -->
+      </li>
+    </ul>
+  </div>
+
+</div>
