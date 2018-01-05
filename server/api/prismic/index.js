@@ -41,44 +41,6 @@ exports.getAll = function (req, res) {
 
 
 
-// Prismic.Api('https://aleali.cdn.prismic.io/api', function (err, Api) {
-//     Api.form('everything')
-//         .ref(Api.master())
-//         .query(Prismic.Predicates.at('document.type', type))
-//         .orderings('[my.'+type+'.date desc]')
-//         .pageSize(5)
-//         .page(page)
-//         .submit(function (err, response) {
-//
-//
-//           console.log("getAll");
-//
-//           console.log(response);
-//
-//             res.status(200).json(response);
-//
-//         });
-//   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 exports.getSingle = function (req, res) {
   var type = req.query.type;
   var uid = req.query.uid;
