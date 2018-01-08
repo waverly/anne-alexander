@@ -1335,7 +1335,7 @@ module.exports = "<div class=\"wrap\">\n  <ul class=\"feed-nav\">\n  <li *ngFor=
 /***/ 267:
 /***/ (function(module, exports) {
 
-module.exports = "<app-svg></app-svg>\n\n<!-- <div *ngIf=\"feed\" class=\"background-image\" [ngStyle]=\"{'background' : 'url(' + bgImgStem + ') no-repeat center center fixed'}\"> -->\n<div class=\"background-image\">\n  <h1>AA</h1>\n  <img [src]=\"bgImgStem\" alt=\"\">\n</div>\n\n\n\n<div class=\"feed\" *ngIf=\"feed\" >\n  <!-- <div class=\"feed-content\" *ngIf=\"feed\">\n    <ul class=\"feed-ul\">\n      <li *ngFor='let f of feed.results' class=\"feed-li\">\n          <img [src]=\"f.data['portfolio-video'].thumbnail?.value.main.url\" alt=\"\">\n\n      </li>\n    </ul>\n  </div> -->\n  <app-feed-nav (indexChange)=\"onIndexChanged( $event )\" *ngIf=\"feed\" [data]=\"feed\"></app-feed-nav>\n</div>\n"
+module.exports = "<!-- <app-svg></app-svg> -->\n\n<!-- <div *ngIf=\"feed\" class=\"background-image\" [ngStyle]=\"{'background' : 'url(' + bgImgStem + ') no-repeat center center fixed'}\"> -->\n<div class=\"background-image\">\n  <h1>AA</h1>\n  <img [src]=\"bgImgStem\" alt=\"\">\n</div>\n\n\n\n<div class=\"feed\" *ngIf=\"feed\" >\n  <!-- <div class=\"feed-content\" *ngIf=\"feed\">\n    <ul class=\"feed-ul\">\n      <li *ngFor='let f of feed.results' class=\"feed-li\">\n          <img [src]=\"f.data['portfolio-video'].thumbnail?.value.main.url\" alt=\"\">\n\n      </li>\n    </ul>\n  </div> -->\n  <app-feed-nav (indexChange)=\"onIndexChanged( $event )\" *ngIf=\"feed\" [data]=\"feed\"></app-feed-nav>\n</div>\n"
 
 /***/ }),
 
