@@ -21,94 +21,6 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 154:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(33);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fadeInAnimation; });
-
-var fadeInAnimation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('fadeInAnimation', [
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 0 }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('1s', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 1 }))
-    ]),
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/fade-in.animation.js.map
-
-/***/ }),
-
-/***/ 155:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__ = __webpack_require__(154);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slide_in_out_animation__ = __webpack_require__(156);
-/* unused harmony namespace reexport */
-
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/index.js.map
-
-/***/ }),
-
-/***/ 156:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(33);
-/* unused harmony export slideInOutAnimation */
-// import the required animation functions from the angular animations module
-
-var slideInOutAnimation = 
-// trigger name for attaching this animation to an element using the [@triggerName] syntax
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('slideInOutAnimation', [
-    // end state styles for route container (host)
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["b" /* state */])('*', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-        // the view covers the whole screen with a semi tranparent background
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.8)'
-    })),
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // start with the content positioned off the right of the screen,
-            // -400% is required instead of -100% because the negative position adds to the width of the element
-            right: '-400%',
-            // start with background opacity set to 0 (invisible)
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // transition the right position to 0 which slides the content into view
-            right: 0,
-            // transition the background opacity to 0.8 to fade it in
-            backgroundColor: 'rgba(0, 0, 0, 0.8)'
-        }))
-    ]),
-    // route 'leave' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':leave', [
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // transition the right position to -400% which slides the content out of view
-            right: '-400%',
-            // transition the background opacity to 0 to fade it out
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }))
-    ])
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/slide-in-out.animation.js.map
-
-/***/ }),
-
 /***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -576,7 +488,6 @@ var FeedNavComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_index__ = __webpack_require__(155);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -593,8 +504,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-
-// import fade in animation
 
 var FeedComponent = /** @class */ (function () {
     function FeedComponent(_globalService, _feedService, document) {
@@ -672,12 +581,12 @@ var FeedComponent = /** @class */ (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             // selector: 'app-feed',
             template: __webpack_require__(267),
-            styles: [__webpack_require__(255)],
+            styles: [__webpack_require__(255)]
             // ,
             // make fade in animation available to this component
-            animations: [__WEBPACK_IMPORTED_MODULE_4__animation_index__["a" /* fadeInAnimation */]],
+            //animations: [fadeInAnimation],
             // attach the fade in animation to the host (root) element of this component
-            host: { '[@fadeInAnimation]': '' }
+            //host: { '[@fadeInAnimation]': '' }
         }),
         __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["d" /* DOCUMENT */])),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _b || Object, Object])

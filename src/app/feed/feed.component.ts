@@ -5,18 +5,18 @@ import {GlobalService} from '../shared/variables.service';
 import {IFeed}from './feed';
 import { DOCUMENT } from '@angular/platform-browser';
 // import fade in animation
-import { fadeInAnimation } from './../_animation/index';
+//import { fadeInAnimation } from './../_animation/index';
 import * as $ from 'jquery';
 
 @Component({
   // selector: 'app-feed',
   templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.scss'],
+  styleUrls: ['./feed.component.scss']
   // ,
   // make fade in animation available to this component
-  animations: [fadeInAnimation],
+  //animations: [fadeInAnimation],
   // attach the fade in animation to the host (root) element of this component
-  host: { '[@fadeInAnimation]': '' }
+  //host: { '[@fadeInAnimation]': '' }
 })
 
 
