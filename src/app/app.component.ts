@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { fadeInAnimation } from './_animation/index';
+//import { fadeInAnimation } from './_animation/index';
 
 
 // import {}

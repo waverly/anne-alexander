@@ -14,9 +14,9 @@ import * as $ from 'jquery';
   styleUrls: ['./feed.component.scss'],
   // ,
   // make fade in animation available to this component
-  animations: [fadeInAnimation],
-  // attach the fade in animation to the host (root) element of this component
-  host: { '[@fadeInAnimation]': '' }
+  // animations: [fadeInAnimation],
+  // // attach the fade in animation to the host (root) element of this component
+  // host: { '[@fadeInAnimation]': '' }
 })
 
 

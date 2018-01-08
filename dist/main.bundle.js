@@ -21,94 +21,6 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 154:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(33);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fadeInAnimation; });
-
-var fadeInAnimation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('fadeInAnimation', [
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 0 }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('1s', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 1 }))
-    ]),
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/fade-in.animation.js.map
-
-/***/ }),
-
-/***/ 155:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__ = __webpack_require__(154);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slide_in_out_animation__ = __webpack_require__(156);
-/* unused harmony namespace reexport */
-
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/index.js.map
-
-/***/ }),
-
-/***/ 156:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(33);
-/* unused harmony export slideInOutAnimation */
-// import the required animation functions from the angular animations module
-
-var slideInOutAnimation = 
-// trigger name for attaching this animation to an element using the [@triggerName] syntax
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('slideInOutAnimation', [
-    // end state styles for route container (host)
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["b" /* state */])('*', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-        // the view covers the whole screen with a semi tranparent background
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.8)'
-    })),
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // start with the content positioned off the right of the screen,
-            // -400% is required instead of -100% because the negative position adds to the width of the element
-            right: '-400%',
-            // start with background opacity set to 0 (invisible)
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // transition the right position to 0 which slides the content into view
-            right: 0,
-            // transition the background opacity to 0.8 to fade it in
-            backgroundColor: 'rgba(0, 0, 0, 0.8)'
-        }))
-    ]),
-    // route 'leave' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':leave', [
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
-            // transition the right position to -400% which slides the content out of view
-            right: '-400%',
-            // transition the background opacity to 0 to fade it out
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }))
-    ])
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/slide-in-out.animation.js.map
-
-/***/ }),
-
 /***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -203,6 +115,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+//import { fadeInAnimation } from './_animation/index';
 // import {}
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
@@ -576,7 +489,6 @@ var FeedNavComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_index__ = __webpack_require__(155);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -593,8 +505,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-
-// import fade in animation
 
 var FeedComponent = /** @class */ (function () {
     function FeedComponent(_globalService, _feedService, document) {
@@ -673,11 +583,6 @@ var FeedComponent = /** @class */ (function () {
             // selector: 'app-feed',
             template: __webpack_require__(267),
             styles: [__webpack_require__(255)],
-            // ,
-            // make fade in animation available to this component
-            animations: [__WEBPACK_IMPORTED_MODULE_4__animation_index__["a" /* fadeInAnimation */]],
-            // attach the fade in animation to the host (root) element of this component
-            host: { '[@fadeInAnimation]': '' }
         }),
         __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["d" /* DOCUMENT */])),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _b || Object, Object])
@@ -1353,7 +1258,7 @@ module.exports = "/*....................................SCSS VARIABLES..........
 /***/ 255:
 /***/ (function(module, exports) {
 
-module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\nsvg {\n  /*width: 100vw;\n  height: 100vh;\n  */\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  transition: 2s all;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n  .background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n  .feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n  .feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n    .feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n  .feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n    .feed-ul .feed-li:first-child {\n      margin-top: 0; }\n    .feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n    .feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n      .feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n      .feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n    .feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n    .feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n"
+module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\nsvg {\n  /*width: 100vw;\n  height: 100vh;\n  */\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: pink;\n  transition: 2s all;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n  .background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n  .feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n  .feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n    .feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n  .feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n    .feed-ul .feed-li:first-child {\n      margin-top: 0; }\n    .feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n    .feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n      .feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n      .feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n    .feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n    .feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n"
 
 /***/ }),
 
