@@ -1,14 +1,17 @@
 <div class="wrap">
   <ul class="feed-nav">
   <li *ngFor='let f of data.results; let i = index' class="feed-nav-li">
-        <a (mouseenter)="aMouseEnter($event)" [attr.id]="i" *ngIf="f.type" [routerLink]="['/',f.type, f.uid]">
-          <h3>{{ i < 10 ? "0"+i+"." : i+"."  }} </h3>
+        <a (mouseenter)="aMouseEnter($event)"
+            [attr.id]="i"
+            *ngIf="f.type"
+            [routerLink]="['/','portfolio', f.uid]">
+          <h4>{{ i < 10 ? "0"+i+"." : i+"."  }} </h4>
         </a>
       <!-- <h1>works..</h1> -->
     </li>
   </ul>
-  <h3 class="project-title">
+  <h4 class="project-title">
     {{titleString}}
-  </h3>
+  </h4>
 </div>
 <!-- <h1>{{didUGetIt}}</h1> -->

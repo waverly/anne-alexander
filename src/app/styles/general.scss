@@ -91,6 +91,7 @@ body {
   position: relative;
   background-color: black;
   color: $red;
+  font-size: 10px;
 
 }
 
@@ -100,6 +101,7 @@ p, a, li {
   list-style-type: none;
   letter-spacing:$letter-spacing;
   color: $red;
+  line-height: $line-height-p;
 }
 
 
@@ -109,7 +111,7 @@ input, textarea, select, a, li {
 
 a{
   cursor:pointer;
-  @include p();
+  font-size: inherit;
 }
 
 .a-hover{
@@ -126,6 +128,14 @@ h1{
 
 h2{
   @include h2();
+}
+
+h3{
+  @include h3();
+}
+
+h4{
+  @include h4();
 }
 
 

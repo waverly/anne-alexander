@@ -16,7 +16,7 @@ export class FeedNavComponent implements OnInit {
 
   @Output() indexChange = new EventEmitter<string>();
   @Input() data: any;
-  titleString: string = "Mary Jane Joseph";
+  titleString: string = "";
   titleArray: any[]=[];
   id: string;
 

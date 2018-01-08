@@ -6,13 +6,16 @@
   position: relative;
   width: 100vw;
   height: auto;
+
+  h3{
+    padding-bottom: 1rem;
+  }
 }
 
 .text-wrap{
   position: relative;
   width: 500px;
   margin: auto;
-  padding-top: $margin-top;
 }
 
 .about-block{
@@ -25,6 +28,22 @@
     margin-top: $margin-top-p;
     &:nth-child(1){
       margin-top: 0;
+    }
+  }
+}
+
+.column-wrap{
+  columns: 2;
+}
+
+.normal{
+  background-color: blue;
+}
+
+.about-list{
+  li{
+    a{
+      font-size: inherit;
     }
   }
 }

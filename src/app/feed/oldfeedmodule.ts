@@ -37,18 +37,6 @@ import { FeedNavComponent } from './feed-nav/feed-nav.component';
         BrowserAnimationsModule,
         NgDraggableModule,
         RouterModule.forChild([
-          // { path: '/event', component: EventComponent },
-
-          // { path: ':uid', component: FeedDetailComponent },
-          // { path: '/look', component: LookComponent },
-          // { path: '/fashionweek', component: FashionweekComponent },
-          { path: 'portfolio-video/:id', component: FeedDetailComponent },
-          // ,
-          // { path: 'editorial', component: FeedDetailComponent },
-          // { path: 'styling/:styling', component: StylingDetailComponent },
-          // { path: 'styling', component: StylingComponent },
-          { path: '', component: FeedComponent }
-            // { path: 'fashionweek/:id', canActivate: [ ProductDetailGuard ], component: ProductDetailComponent },
         ])
     ],
     providers: [

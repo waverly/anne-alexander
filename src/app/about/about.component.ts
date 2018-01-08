@@ -53,4 +53,13 @@ export class AboutComponent implements OnInit {
       );
     }
 
+    columnWrap(){
+      if ( this.feed.results["0"].data.information.body.value["0"].repeat.length > 5 ){
+        return 'column-wrap';
+      }
+      else{
+        return 'normal';
+      }
+    }
+
 }

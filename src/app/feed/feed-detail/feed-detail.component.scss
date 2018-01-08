@@ -1,9 +1,8 @@
 @import 'variables';
 
 .detail-wrap{
-  width: 80vw;
+  width: 100vw;
   min-height: 100vh;
-  margin-left: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,9 +15,8 @@
   text-align: center;
 }
 
-
 .detail{
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -44,21 +42,17 @@
   margin-top: 1rem;
 
   .left-text{
-    width: 49%;
+    width: 50%;
     text-align: left;
     align-self: left;
-    padding-left: 3.5rem;
   }
 
   .right-text{
-    width: 49%;
+    width: 50%;
     text-align: right;
     align-self: right;
-    padding-right: 2.5rem;
   }
 }
-
-
 
 .detail-video{
   width:100vw;

@@ -24,7 +24,7 @@ export class FeedDetailComponent implements OnInit {
     let type = this._route.snapshot.url["0"].path;
     console.log(type, id);
 
-     this._feedService.getSingle(type,id)
+     this._feedService.getSingle('portfolio-video',id)
      .subscribe(
        data=>this.detail=data,
        error=>this.error=<any>error

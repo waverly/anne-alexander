@@ -3,120 +3,11 @@ webpackJsonp([1,5],{
 /***/ 106:
 /***/ (function(module, exports) {
 
-module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.detail-wrap {\n  width: 80vw;\n  min-height: 100vh;\n  margin-left: 10vw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  text-align: center; }\n\n.detail {\n  width: 100%;\n  height: auto; }\n\n.iframe-container {\n  position: relative;\n  width: 100%;\n  height: 0;\n  padding-bottom: 56.25%; }\n  .iframe-container .video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n\n.text-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin-top: 1rem; }\n  .text-wrap .left-text {\n    width: 49%;\n    text-align: left;\n    -ms-flex-item-align: left;\n        -ms-grid-row-align: left;\n        align-self: left;\n    padding-left: 3.5rem; }\n  .text-wrap .right-text {\n    width: 49%;\n    text-align: right;\n    -ms-flex-item-align: right;\n        -ms-grid-row-align: right;\n        align-self: right;\n    padding-right: 2.5rem; }\n\n.detail-video {\n  width: 100vw; }\n  .detail-video iframe {\n    width: 60vw;\n    height: 60vh;\n    display: block;\n    margin: auto; }\n"
+module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.detail-wrap {\n  width: 100vw;\n  min-height: 100vh;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  text-align: center; }\n\n.detail {\n  width: 60%;\n  height: auto; }\n\n.iframe-container {\n  position: relative;\n  width: 100%;\n  height: 0;\n  padding-bottom: 56.25%; }\n  .iframe-container .video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%; }\n\n.text-wrap {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin-top: 1rem; }\n  .text-wrap .left-text {\n    width: 50%;\n    text-align: left;\n    -ms-flex-item-align: left;\n        -ms-grid-row-align: left;\n        align-self: left; }\n  .text-wrap .right-text {\n    width: 50%;\n    text-align: right;\n    -ms-flex-item-align: right;\n        -ms-grid-row-align: right;\n        align-self: right; }\n\n.detail-video {\n  width: 100vw; }\n  .detail-video iframe {\n    width: 60vw;\n    height: 60vh;\n    display: block;\n    margin: auto; }\n"
 
 /***/ }),
 
-/***/ 150:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(162);
-
-
-
-
-if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
-}
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/main.js.map
-
-/***/ }),
-
-/***/ 157:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(28);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fadeInAnimation; });
-
-var fadeInAnimation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* trigger */])('fadeInAnimation', [
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["k" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({ opacity: 0 }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["l" /* animate */])('1s', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({ opacity: 1 }))
-    ]),
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/fade-in.animation.js.map
-
-/***/ }),
-
-/***/ 158:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__ = __webpack_require__(157);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slide_in_out_animation__ = __webpack_require__(159);
-/* unused harmony namespace reexport */
-
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/index.js.map
-
-/***/ }),
-
-/***/ 159:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(28);
-/* unused harmony export slideInOutAnimation */
-// import the required animation functions from the angular animations module
-
-var slideInOutAnimation = 
-// trigger name for attaching this animation to an element using the [@triggerName] syntax
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* trigger */])('slideInOutAnimation', [
-    // end state styles for route container (host)
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["j" /* state */])('*', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
-        // the view covers the whole screen with a semi tranparent background
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.8)'
-    })),
-    // route 'enter' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["k" /* transition */])(':enter', [
-        // styles at start of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
-            // start with the content positioned off the right of the screen,
-            // -400% is required instead of -100% because the negative position adds to the width of the element
-            right: '-400%',
-            // start with background opacity set to 0 (invisible)
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }),
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["l" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
-            // transition the right position to 0 which slides the content into view
-            right: 0,
-            // transition the background opacity to 0.8 to fade it in
-            backgroundColor: 'rgba(0, 0, 0, 0.8)'
-        }))
-    ]),
-    // route 'leave' transition
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["k" /* transition */])(':leave', [
-        // animation and styles at end of transition
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["l" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
-            // transition the right position to -400% which slides the content out of view
-            right: '-400%',
-            // transition the background opacity to 0 to fade it out
-            backgroundColor: 'rgba(0, 0, 0, 0)'
-        }))
-    ])
-]);
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/slide-in-out.animation.js.map
-
-/***/ }),
-
-/***/ 16:
+/***/ 15:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,14 +72,123 @@ var GlobalService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 150:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(162);
+
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
+}
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
+//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/main.js.map
+
+/***/ }),
+
+/***/ 157:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(29);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fadeInAnimation; });
+
+var fadeInAnimation = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('fadeInAnimation', [
+    // route 'enter' transition
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
+        // styles at start of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 0 }),
+        // animation and styles at end of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('1s', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({ opacity: 1 }))
+    ]),
+]);
+//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/fade-in.animation.js.map
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__ = __webpack_require__(157);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__fade_in_animation__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slide_in_out_animation__ = __webpack_require__(159);
+/* unused harmony namespace reexport */
+
+
+//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/index.js.map
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__(29);
+/* unused harmony export slideInOutAnimation */
+// import the required animation functions from the angular animations module
+
+var slideInOutAnimation = 
+// trigger name for attaching this animation to an element using the [@triggerName] syntax
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* trigger */])('slideInOutAnimation', [
+    // end state styles for route container (host)
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["b" /* state */])('*', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
+        // the view covers the whole screen with a semi tranparent background
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.8)'
+    })),
+    // route 'enter' transition
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':enter', [
+        // styles at start of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
+            // start with the content positioned off the right of the screen,
+            // -400% is required instead of -100% because the negative position adds to the width of the element
+            right: '-400%',
+            // start with background opacity set to 0 (invisible)
+            backgroundColor: 'rgba(0, 0, 0, 0)'
+        }),
+        // animation and styles at end of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
+            // transition the right position to 0 which slides the content into view
+            right: 0,
+            // transition the background opacity to 0.8 to fade it in
+            backgroundColor: 'rgba(0, 0, 0, 0.8)'
+        }))
+    ]),
+    // route 'leave' transition
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["d" /* transition */])(':leave', [
+        // animation and styles at end of transition
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('.5s ease-in-out', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["c" /* style */])({
+            // transition the right position to -400% which slides the content out of view
+            right: '-400%',
+            // transition the background opacity to 0 to fade it out
+            backgroundColor: 'rgba(0, 0, 0, 0)'
+        }))
+    ])
+]);
+//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/slide-in-out.animation.js.map
+
+/***/ }),
+
 /***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -239,12 +239,20 @@ var AboutComponent = /** @class */ (function () {
             _this._globalService.setLoading(false);
         });
     };
+    AboutComponent.prototype.columnWrap = function () {
+        if (this.feed.results["0"].data.information.body.value["0"].repeat.length > 5) {
+            return 'column-wrap';
+        }
+        else {
+            return 'normal';
+        }
+    };
     AboutComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             template: __webpack_require__(272),
             styles: [__webpack_require__(259)]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _d || Object])
     ], AboutComponent);
     return AboutComponent;
     var _a, _b, _c, _d;
@@ -297,20 +305,25 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feed_feed_module__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__about_about_component__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nav_nav_component__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__share_share_component__ = __webpack_require__(175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__logo_logo_component__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__logo_logotype_component__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_variables_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__shared_encodeURI_pipe__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_responsive__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_responsive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_ng2_responsive__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__feed_feed_detail_feed_detail_component__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__feed_feed_nav_feed_nav_component__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__about_about_component__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__contact_contact_component__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__nav_nav_component__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__feed_svg_svg_component__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__share_share_component__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__logo_logo_component__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__logo_logotype_component__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__shared_variables_service__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__shared_encodeURI_pipe__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ng2_responsive__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ng2_responsive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_ng2_responsive__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__shared_url_pipe__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__shared_prismic_service__ = __webpack_require__(30);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -318,6 +331,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -342,31 +361,40 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__nav_nav_component__["a" /* NavComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__share_share_component__["a" /* ShareComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__logo_logo_component__["a" /* LogoComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__logo_logotype_component__["a" /* LogotypeComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__shared_encodeURI_pipe__["a" /* EncodeURIPipe */]
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__nav_nav_component__["a" /* NavComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__feed_svg_svg_component__["a" /* SvgComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__share_share_component__["a" /* ShareComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__logo_logo_component__["a" /* LogoComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__logo_logotype_component__["a" /* LogotypeComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__["a" /* FeedComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__feed_feed_nav_feed_nav_component__["a" /* FeedNavComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__feed_feed_detail_feed_detail_component__["a" /* FeedDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__shared_encodeURI_pipe__["a" /* EncodeURIPipe */],
+                __WEBPACK_IMPORTED_MODULE_20__shared_url_pipe__["a" /* UrlPipe */]
                 // SafePipe
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_5__feed_feed_module__["a" /* FeedModule */],
-                __WEBPACK_IMPORTED_MODULE_16_ng2_responsive__["ResponsiveModule"],
-                __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_19_ng2_responsive__["ResponsiveModule"],
+                __WEBPACK_IMPORTED_MODULE_5__shared_shared_module__["a" /* SharedModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot([
-                    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_8__about_about_component__["a" /* AboutComponent */] },
-                    // {path:'', redirectTo:'home', pathMatch: 'full'},
+                    { path: '', component: __WEBPACK_IMPORTED_MODULE_6__feed_feed_component__["a" /* FeedComponent */], pathMatch: 'full' },
+                    { path: 'portfolio/:id', component: __WEBPACK_IMPORTED_MODULE_7__feed_feed_detail_feed_detail_component__["a" /* FeedDetailComponent */] },
+                    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_10__about_about_component__["a" /* AboutComponent */] },
                     { path: '**', redirectTo: '', pathMatch: 'full' }
+                    // ,
+                    // { path: 'editorial', component: FeedDetailComponent },
+                    // { path: 'styling/:styling', component: StylingDetailComponent },
+                    // { path: 'styling', component: StylingComponent },
                 ]),
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_14__shared_variables_service__["a" /* GlobalService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_17__shared_variables_service__["a" /* GlobalService */], __WEBPACK_IMPORTED_MODULE_21__shared_prismic_service__["a" /* PrismicService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -381,7 +409,7 @@ var AppModule = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -422,8 +450,8 @@ var ContactComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -449,7 +477,7 @@ var FeedDetailComponent = /** @class */ (function () {
         var id = this._route.snapshot.params['id'];
         var type = this._route.snapshot.url["0"].path;
         console.log(type, id);
-        this._feedService.getSingle(type, id)
+        this._feedService.getSingle('portfolio-video', id)
             .subscribe(function (data) { return _this.detail = data; }, function (error) { return _this.error = error; });
         console.log(this.detail);
         console.log('how did we do?');
@@ -460,7 +488,7 @@ var FeedDetailComponent = /** @class */ (function () {
             template: __webpack_require__(275),
             styles: [__webpack_require__(106)]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _c || Object])
     ], FeedDetailComponent);
     return FeedDetailComponent;
     var _a, _b, _c;
@@ -470,57 +498,13 @@ var FeedDetailComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 165:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(29);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedGuard; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var FeedGuard = /** @class */ (function () {
-    function FeedGuard(_router) {
-        this._router = _router;
-    }
-    FeedGuard.prototype.canActivate = function (route) {
-        var id = +route.url[1].path;
-        if (isNaN(id) || id < 1) {
-            alert('Invalid feed Id');
-            this._router.navigate(['/feed']);
-            return false;
-        }
-        ;
-        return true;
-    };
-    FeedGuard = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
-    ], FeedGuard);
-    return FeedGuard;
-    var _a;
-}());
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/feed-guard.service.js.map
-
-/***/ }),
-
 /***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedNavComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -545,7 +529,7 @@ var FeedNavComponent = /** @class */ (function () {
         this._feedService = _feedService;
         this.document = document;
         this.indexChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.titleString = "Mary Jane Joseph";
+        this.titleString = "";
         this.titleArray = [];
     }
     FeedNavComponent.prototype.ngOnInit = function () {
@@ -580,7 +564,7 @@ var FeedNavComponent = /** @class */ (function () {
             template: __webpack_require__(276),
             styles: [__webpack_require__(262)]
         }),
-        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* DOCUMENT */])),
+        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["d" /* DOCUMENT */])),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _b || Object, Object])
     ], FeedNavComponent);
     return FeedNavComponent;
@@ -596,8 +580,8 @@ var FeedNavComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__animation_index__ = __webpack_require__(158);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedComponent; });
@@ -702,7 +686,7 @@ var FeedComponent = /** @class */ (function () {
             // attach the fade in animation to the host (root) element of this component
             host: { '[@fadeInAnimation]': '' }
         }),
-        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* DOCUMENT */])),
+        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["d" /* DOCUMENT */])),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _b || Object, Object])
     ], FeedComponent);
     return FeedComponent;
@@ -710,250 +694,6 @@ var FeedComponent = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/feed.component.js.map
-
-/***/ }),
-
-/***/ 168:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__feed_component__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styling_styling_component__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styling_styling_detail_styling_detail_component__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__feed_detail_feed_detail_component__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__feed_guard_service__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_url_pipe__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_shared_module__ = __webpack_require__(178);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_platform_browser_animations__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular_draggable__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular_draggable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_angular_draggable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__svg_svg_component__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__feed_nav_feed_nav_component__ = __webpack_require__(166);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedModule; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-// import { ProductFilterPipe } from './product-filter.pipe';
-
-// import {SafePipe} from './../shared/safeUrl.pipe';
-
-
-
-
-
-
-var FeedModule = /** @class */ (function () {
-    function FeedModule() {
-    }
-    FeedModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__feed_component__["a" /* FeedComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__feed_detail_feed_detail_component__["a" /* FeedDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__styling_styling_component__["a" /* StylingComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__styling_styling_detail_styling_detail_component__["a" /* StylingDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__svg_svg_component__["a" /* SvgComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__shared_url_pipe__["a" /* UrlPipe */],
-                __WEBPACK_IMPORTED_MODULE_12__feed_nav_feed_nav_component__["a" /* FeedNavComponent */]
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_8__shared_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_9__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_10_angular_draggable__["NgDraggableModule"],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild([
-                    // { path: '/event', component: EventComponent },
-                    // { path: ':uid', component: FeedDetailComponent },
-                    // { path: '/look', component: LookComponent },
-                    // { path: '/fashionweek', component: FashionweekComponent },
-                    { path: 'portfolio-video/:id', component: __WEBPACK_IMPORTED_MODULE_5__feed_detail_feed_detail_component__["a" /* FeedDetailComponent */] },
-                    // ,
-                    // { path: 'editorial', component: FeedDetailComponent },
-                    // { path: 'styling/:styling', component: StylingDetailComponent },
-                    // { path: 'styling', component: StylingComponent },
-                    { path: '', component: __WEBPACK_IMPORTED_MODULE_2__feed_component__["a" /* FeedComponent */] }
-                    // { path: 'fashionweek/:id', canActivate: [ ProductDetailGuard ], component: ProductDetailComponent },
-                ])
-            ],
-            providers: [
-                __WEBPACK_IMPORTED_MODULE_6__feed_guard_service__["a" /* FeedGuard */]
-                // SafePipe
-            ]
-        })
-    ], FeedModule);
-    return FeedModule;
-}());
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/feed.module.js.map
-
-/***/ }),
-
-/***/ 169:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(29);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StylingDetailComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var StylingDetailComponent = /** @class */ (function () {
-    function StylingDetailComponent(_route, _router, _stylingService) {
-        this._route = _route;
-        this._router = _router;
-        this._stylingService = _stylingService;
-    }
-    StylingDetailComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        var id = this._route.snapshot.params['styling'];
-        var type = this._route.snapshot.url["0"].path;
-        console.log(type);
-        this._stylingService.getSingle(type, id)
-            .subscribe(function (data) { return _this.styling_detail = data; }, function (error) { return _this.error = error; });
-    };
-    StylingDetailComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            template: __webpack_require__(278),
-            styles: [__webpack_require__(106), __webpack_require__(264)]
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _c || Object])
-    ], StylingDetailComponent);
-    return StylingDetailComponent;
-    var _a, _b, _c;
-}());
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/styling-detail.component.js.map
-
-/***/ }),
-
-/***/ 170:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(14);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StylingComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
-
-
-var StylingComponent = /** @class */ (function () {
-    function StylingComponent(_globalService, _prismicService, document) {
-        this._globalService = _globalService;
-        this._prismicService = _prismicService;
-        this.document = document;
-        this.innerHeight = window.innerHeight;
-        this.pageTitle = 'Product List';
-        this.paginationInProcess = false;
-        this.isBackgroundStyling = false;
-    }
-    //  toggleImage(): void {
-    //    this.showImage = !this.showImage;
-    //  }
-    StylingComponent.prototype.ngOnInit = function () {
-        this._globalService.setLoading(true);
-        console.log('ng on init');
-        console.log(this.styling);
-        if (!this.styling) {
-            this.getPage(0);
-        }
-    };
-    StylingComponent.prototype.concatResults = function (obj) {
-        this.styling.results = this.styling.results.concat(obj.results);
-        this.styling.next_page = obj.next_page;
-        this.styling.page = obj.page;
-        this.styling.total_pages = obj.total_pages;
-        this.styling.prev_page = obj.prev_page;
-    };
-    StylingComponent.prototype.getPage = function (page) {
-        var _this = this;
-        this._prismicService.getFeed('styling', page)
-            .subscribe(function (styling) {
-            if (page == 0) {
-                _this.styling = styling;
-                _this._globalService.setLoading(false);
-            }
-            else {
-                _this.concatResults(styling);
-            }
-        }, function (error) {
-            _this.errorMessage = error;
-            _this._globalService.setLoading(false);
-        });
-    };
-    StylingComponent.prototype.onWindowScroll = function () {
-        var number = this.document.body.scrollTop;
-        console.log(window.innerHeight);
-        var body = document.body, html = document.documentElement;
-        var docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-        var windowBottom = window.innerHeight + window.pageYOffset;
-        if ((windowBottom >= docHeight) && (this.paginationInProcess == false)) {
-            // alert('bottom reached');
-            if (this.styling) {
-                if ((this.styling.page + 1) < this.styling.total_pages) {
-                    this.getPage(this.styling.next_page);
-                }
-            }
-        }
-    };
-    StylingComponent.prototype.showBackgroundStyling = function (value) {
-        this.isBackgroundStyling = value;
-    };
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])("window:scroll", []),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", []),
-        __metadata("design:returntype", void 0)
-    ], StylingComponent.prototype, "onWindowScroll", null);
-    StylingComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            // selector: 'app-styling',
-            template: __webpack_require__(279),
-            styles: [__webpack_require__(265)]
-        }),
-        __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* DOCUMENT */])),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_variables_service__["a" /* GlobalService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shared_prismic_service__["a" /* PrismicService */]) === "function" && _b || Object, Object])
-    ], StylingComponent);
-    return StylingComponent;
-    var _a, _b;
-}());
-
-//# sourceMappingURL=/Users/waverly/Documents/Web/anne-alexander/src/styling.component.js.map
 
 /***/ }),
 
@@ -1060,7 +800,7 @@ var SvgComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1100,8 +840,8 @@ var LogoComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_variables_service__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogotypeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1127,23 +867,23 @@ var LogotypeComponent = /** @class */ (function () {
             template: __webpack_require__(282),
             styles: [__webpack_require__(268)],
             animations: [
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* trigger */])('navLiState', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["a" /* trigger */])('navLiState', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["b" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["c" /* style */])({
                         height: '0px',
                         position: 'absolute'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["b" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["c" /* style */])({
                         height: '50px',
                         position: 'relative'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["l" /* animate */])('500ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["l" /* animate */])('500ms ease-out'))
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["d" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('500ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["d" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('500ms ease-out'))
                 ]),
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* trigger */])('navUlState', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({})),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({})),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["l" /* animate */])('500ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["k" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["l" /* animate */])('500ms ease-out'))
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["a" /* trigger */])('navUlState', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["b" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["c" /* style */])({})),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["b" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["c" /* style */])({})),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["d" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('500ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["d" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('500ms ease-out'))
                 ])
             ]
         }),
@@ -1162,13 +902,13 @@ var LogotypeComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_responsive__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_responsive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_responsive__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_match_media_service__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_animations__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_animations__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1251,28 +991,28 @@ var NavComponent = /** @class */ (function () {
             template: __webpack_require__(283),
             styles: [__webpack_require__(269)],
             animations: [
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["i" /* trigger */])('navState', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["j" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["h" /* style */])({
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["a" /* trigger */])('navState', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["b" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["c" /* style */])({
                         top: '-100vh'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["j" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["h" /* style */])({
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["b" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["c" /* style */])({
                         top: '0'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["j" /* state */])('3', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["h" /* style */])({
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["b" /* state */])('3', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["c" /* style */])({
                         top: 'auto'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["k" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["l" /* animate */])('500ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["k" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["l" /* animate */])('500ms ease-out'))
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["d" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["e" /* animate */])('500ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["d" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["e" /* animate */])('500ms ease-out'))
                 ]),
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["i" /* trigger */])('navUlState', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["j" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["h" /* style */])({})),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["j" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["h" /* style */])({})),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["k" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["l" /* animate */])('500ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["k" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["l" /* animate */])('500ms ease-out'))
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["a" /* trigger */])('navUlState', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["b" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["c" /* style */])({})),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["b" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["c" /* style */])({})),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["d" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["e" /* animate */])('500ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["d" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__angular_animations__["e" /* animate */])('500ms ease-out'))
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_ng2_responsive__["ResponsiveModule"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ng2_responsive__["ResponsiveModule"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__shared_match_media_service__["a" /* MatchMediaService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_match_media_service__["a" /* MatchMediaService */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4_ng2_responsive__["ResponsiveModule"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_ng2_responsive__["ResponsiveModule"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__shared_match_media_service__["a" /* MatchMediaService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_match_media_service__["a" /* MatchMediaService */]) === "function" && _e || Object])
     ], NavComponent);
     return NavComponent;
     var _a, _b, _c, _d, _e;
@@ -1287,10 +1027,10 @@ var NavComponent = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_animations__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1327,19 +1067,19 @@ var ShareComponent = /** @class */ (function () {
             template: __webpack_require__(284),
             styles: [__webpack_require__(270)],
             animations: [
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["i" /* trigger */])('shareState', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["j" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["h" /* style */])({
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["a" /* trigger */])('shareState', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["b" /* state */])('0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["c" /* style */])({
                         left: '-200px'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["j" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["h" /* style */])({
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["b" /* state */])('1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["c" /* style */])({
                         left: '0px'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["k" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["l" /* animate */])('500ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["k" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["l" /* animate */])('500ms ease-out'))
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["d" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["e" /* animate */])('500ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["d" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_animations__["e" /* animate */])('500ms ease-out'))
                 ])
             ]
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_variables_service__["a" /* GlobalService */]) === "function" && _c || Object])
     ], ShareComponent);
     return ShareComponent;
     var _a, _b, _c;
@@ -1388,7 +1128,7 @@ var EncodeURIPipe = /** @class */ (function () {
     };
     EncodeURIPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'encodeURI' }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _a || Object])
     ], EncodeURIPipe);
     return EncodeURIPipe;
     var _a;
@@ -1425,7 +1165,7 @@ var SafePipe = /** @class */ (function () {
     };
     SafePipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'safe' }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _a || Object])
     ], SafePipe);
     return SafePipe;
     var _a;
@@ -1440,10 +1180,10 @@ var SafePipe = /** @class */ (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prismic_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__variables_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prismic_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__variables_service__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__match_media_service__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__safeUrl_pipe__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__youtubeEmbed_pipe__ = __webpack_require__(180);
@@ -1472,9 +1212,9 @@ var SharedModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_7__youtubeEmbed_pipe__["a" /* YoutubeEmbedPipe */]
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_3__prismic_service__["a" /* PrismicService */], __WEBPACK_IMPORTED_MODULE_4__variables_service__["a" /* GlobalService */], __WEBPACK_IMPORTED_MODULE_5__match_media_service__["a" /* MatchMediaService */]],
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["k" /* CommonModule */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* CommonModule */]],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["k" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["e" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_6__safeUrl_pipe__["a" /* SafePipe */],
                 __WEBPACK_IMPORTED_MODULE_7__youtubeEmbed_pipe__["a" /* YoutubeEmbedPipe */]
@@ -1518,7 +1258,7 @@ var UrlPipe = /** @class */ (function () {
     };
     UrlPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'UrlPipe' }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _a || Object])
     ], UrlPipe);
     return UrlPipe;
     var _a;
@@ -1556,7 +1296,7 @@ var YoutubeEmbedPipe = /** @class */ (function () {
     };
     YoutubeEmbedPipe = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'youtubeEmbed' }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["e" /* DomSanitizer */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _a || Object])
     ], YoutubeEmbedPipe);
     return YoutubeEmbedPipe;
     var _a;
@@ -1585,7 +1325,7 @@ var environment = {
 /***/ 259:
 /***/ (function(module, exports) {
 
-module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.about {\n  position: relative;\n  width: 100vw;\n  height: auto; }\n\n.text-wrap {\n  position: relative;\n  width: 500px;\n  margin: auto;\n  padding-top: 150px; }\n\n.about-block {\n  margin: 5rem 0rem; }\n\n.about-text p {\n  font-size: 10px;\n  line-height: 26px;\n  font-family: helvetica;\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n  margin-top: 20px; }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    .about-text p {\n      font-size: 12px;\n      line-height: 17px; } }\n  .about-text p:nth-child(1) {\n    margin-top: 0; }\n"
+module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.about {\n  position: relative;\n  width: 100vw;\n  height: auto; }\n  .about h3 {\n    padding-bottom: 1rem; }\n\n.text-wrap {\n  position: relative;\n  width: 500px;\n  margin: auto; }\n\n.about-block {\n  margin: 5rem 0rem; }\n\n.about-text p {\n  font-size: 14px;\n  line-height: 19px;\n  font-family: helvetica;\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n  margin-top: 20px; }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    .about-text p {\n      font-size: 12px;\n      line-height: 17px; } }\n  .about-text p:nth-child(1) {\n    margin-top: 0; }\n\n.column-wrap {\n  -webkit-columns: 2;\n          columns: 2; }\n\n.normal {\n  background-color: blue; }\n\n.about-list li a {\n  font-size: inherit; }\n"
 
 /***/ }),
 
@@ -1606,28 +1346,14 @@ module.exports = ".contact {\n  width: 100vw;\n  height: 100vh; }\n\n.contact-co
 /***/ 262:
 /***/ (function(module, exports) {
 
-module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.wrap {\n  z-index: 15;\n  position: fixed; }\n  .wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 200px;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10;\n    font-size: 14px; }\n  .wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    /* padding: 0 1em; */\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n    .wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n      .wrap .feed-nav li h3 {\n        font-size: 14px;\n        color: #FF3700; }\n    .wrap .feed-nav a:hover h3 {\n      color: #00C8FF; }\n"
+module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.wrap {\n  z-index: 15;\n  position: fixed; }\n  .wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 50vh;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10; }\n  .wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    /* padding: 0 1em; */\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n    .wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n  .wrap a:hover h3 {\n    color: #00C8FF; }\n"
 
 /***/ }),
 
 /***/ 263:
 /***/ (function(module, exports) {
 
-module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\nsvg {\n  /*width: 100vw;\n  height: 100vh;\n  */\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  transition: 2s all;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n  .background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n  .feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n  .feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n    .feed-nav li h3 {\n      font-size: 14px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 14px; }\n\n.feed-ul {\n  width: 100vw; }\n  .feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n    .feed-ul .feed-li:first-child {\n      margin-top: 0; }\n    .feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n    .feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n      .feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n      .feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n    .feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n    .feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n"
-
-/***/ }),
-
-/***/ 264:
-/***/ (function(module, exports) {
-
-module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.styling-detail {\n  width: 100%;\n  height: auto;\n  background-color: #000; }\n\n.styling-detail-title {\n  color: #FFF; }\n\n.styling-detail-cover {\n  width: 100%;\n  height: 100vh;\n  position: fixed;\n  z-index: 3;\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat; }\n  .styling-detail-cover img {\n    width: 100vw; }\n\n.styling-detail-title {\n  position: fixed;\n  top: 25px;\n  right: 25px;\n  z-index: 4; }\n\n.styling-detail-ul {\n  z-index: 4;\n  position: relative;\n  color: #FFF; }\n  .styling-detail-ul .styling-detail-li {\n    width: 100vw;\n    height: auto;\n    margin-top: 100px;\n    margin-bottom: 100px;\n    display: block; }\n    .styling-detail-ul .styling-detail-li:first-child {\n      padding-top: 150px;\n      margin-top: 0; }\n    .styling-detail-ul .styling-detail-li:last-child {\n      padding-bottom: 150px;\n      margin-bottom: 0; }\n    .styling-detail-ul .styling-detail-li .styling-detail-img {\n      width: 100%;\n      margin: auto; }\n      .styling-detail-ul .styling-detail-li .styling-detail-img img {\n        width: 100vw;\n        margin: auto;\n        display: block; }\n\n.styling-detail-credits {\n  position: fixed;\n  right: 25px;\n  bottom: 25px;\n  width: auto;\n  height: auto;\n  display: block;\n  z-index: 8; }\n  .styling-detail-credits .detail-credits-ul {\n    width: auto;\n    margin: auto;\n    display: block; }\n\n.styling-detail-gallery {\n  width: 100vw;\n  height: 100vh;\n  overflow-x: scroll;\n  white-space: nowrap; }\n  .styling-detail-gallery img {\n    display: inline-block;\n    width: 80vw; }\n\n.styling-detail-video {\n  width: 100vw; }\n  .styling-detail-video iframe {\n    width: 100vw;\n    height: 60vh;\n    display: block;\n    margin: auto; }\n"
-
-/***/ }),
-
-/***/ 265:
-/***/ (function(module, exports) {
-
-module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.styling {\n  width: 100vw;\n  height: 100vh;\n  background-color: #000; }\n\n.styling-content {\n  width: 100vw; }\n\n.styling-ul {\n  width: 100vw;\n  height: 100vh;\n  display: block;\n  overflow-x: hidden; }\n  .styling-ul .styling-li {\n    position: relative;\n    max-width: 30vw;\n    background-color: transparent; }\n    .styling-ul .styling-li .styling-cover {\n      width: 200px;\n      height: auto;\n      display: block;\n      position: absolute; }\n    .styling-ul .styling-li .styling-a .styling-title {\n      color: #FFF; }\n"
+module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\nsvg {\n  /*width: 100vw;\n  height: 100vh;\n  */\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  transition: 2s all;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  .background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n  .background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n  .feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n  .feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n    .feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n  .feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n    .feed-ul .feed-li:first-child {\n      margin-top: 0; }\n    .feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n    .feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n      .feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n      .feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n    .feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n    .feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n"
 
 /***/ }),
 
@@ -1655,21 +1381,21 @@ module.exports = "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts
 /***/ 269:
 /***/ (function(module, exports) {
 
-module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  top: 25px;\n  left: 25px;\n  width: 100px;\n  z-index: 15; }\n\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n  .nav-ul .nav-li {\n    width: 100px;\n    position: relative;\n    display: inline-block; }\n    .nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: margin 0.5s ease;\n      -webkit-transition: margin 0.5s ease;\n      -moz-transition: margin 0.5s ease;\n      -ms-transition: margin 0.5s ease;\n      -o-transition: margin 0.5s ease;\n      font-size: 14px;\n      color: #FF3700;\n      font-size: 22px;\n      line-height: 36px;\n      font-family: \"avus\";\n      letter-spacing: 0px;\n      /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n      @media only screen and (min-width: 0px) and (max-width: 767px) {\n        .nav-ul .nav-li a {\n          font-size: 20px;\n          line-height: 36px; } }\n      .nav-ul .nav-li a:hover {\n        margin-left: 5px;\n        color: #00C8FF; }\n      .nav-ul .nav-li a.nav_active {\n        margin-left: 5px !important; }\n\n.nav-ul.open .nav-li {\n  position: relative; }\n"
+module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  top: 25px;\n  left: 25px;\n  width: 100px;\n  z-index: 15; }\n\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n  .nav-ul .nav-li {\n    width: 100px;\n    position: relative;\n    display: inline-block; }\n    .nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: margin 0.5s ease;\n      -webkit-transition: margin 0.5s ease;\n      -moz-transition: margin 0.5s ease;\n      -ms-transition: margin 0.5s ease;\n      -o-transition: margin 0.5s ease;\n      font-size: 25px;\n      color: #FF3700;\n      font-size: 36px;\n      line-height: 36px;\n      font-family: \"avus\";\n      letter-spacing: 0px;\n      /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n      @media only screen and (min-width: 0px) and (max-width: 767px) {\n        .nav-ul .nav-li a {\n          font-size: 30px;\n          line-height: 36px; } }\n      .nav-ul .nav-li a:hover {\n        margin-left: 5px;\n        color: #00C8FF; }\n      .nav-ul .nav-li a.nav_active {\n        margin-left: 5px !important; }\n\n.nav-ul.open .nav-li {\n  position: relative; }\n"
 
 /***/ }),
 
 /***/ 270:
 /***/ (function(module, exports) {
 
-module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.share {\n  position: fixed;\n  top: 25px;\n  left: 25px;\n  z-index: 15;\n  width: 200px; }\n\n.share-button {\n  cursor: pointer; }\n\n.share-ul {\n  position: absolute;\n  left: -200px; }\n  .share-ul .share-li {\n    display: inline-block; }\n    .share-ul .share-li a {\n      font-size: 22px;\n      line-height: 36px;\n      font-family: \"avus\";\n      letter-spacing: 0px;\n      /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n      @media only screen and (min-width: 0px) and (max-width: 767px) {\n        .share-ul .share-li a {\n          font-size: 20px;\n          line-height: 36px; } }\n\n.share-ul.share_open {\n  left: 0; }\n"
+module.exports = "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.share {\n  position: fixed;\n  top: 25px;\n  left: 25px;\n  z-index: 15;\n  width: 200px; }\n\n.share-button {\n  cursor: pointer; }\n\n.share-ul {\n  position: absolute;\n  left: -200px; }\n  .share-ul .share-li {\n    display: inline-block; }\n    .share-ul .share-li a {\n      font-size: 36px;\n      line-height: 36px;\n      font-family: \"avus\";\n      letter-spacing: 0px;\n      /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n      @media only screen and (min-width: 0px) and (max-width: 767px) {\n        .share-ul .share-li a {\n          font-size: 30px;\n          line-height: 36px; } }\n\n.share-ul.share_open {\n  left: 0; }\n"
 
 /***/ }),
 
 /***/ 272:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"about\" *ngIf=\"feed\">\n  <div class=\"text-wrap\">\n\n    <div class=\"about-block\">\n      <h2>Background</h2>\n      <div class=\"about-text\">\n        <p>{{feed.results[\"0\"].data.information.background.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h2>{{feed.results[\"0\"].data.information.body.value[\"0\"][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h2>\n      <div class=\"about-list\">\n        <ul>\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value['0'].repeat\">\n            {{ item[\"client-name\"].value[\"0\"].text }}\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h2>{{feed.results[\"0\"].data.information.body.value[1][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h2>\n      <div class=\"about-list\">\n        <ul>\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value[1].repeat\">\n            <a [href]=\"item['contact-item'].value['0'].spans['0'].data.value.url\">\n              {{ item[\"contact-item\"].value[\"0\"].text }}\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"about\" *ngIf=\"feed\">\n  <div class=\"text-wrap\">\n\n    <div class=\"about-block\">\n      <h3>Background</h3>\n      <div class=\"about-text\">\n        <p>{{feed.results[\"0\"].data.information.background.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[\"0\"][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul [ngClass]=\"columnWrap()\">\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value['0'].repeat\">\n            {{ item[\"client-name\"].value[\"0\"].text }}\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[1][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul>\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value[1].repeat\">\n            <a [href]=\"item['contact-item'].value['0'].spans['0'].data.value.url\">\n              {{ item[\"contact-item\"].value[\"0\"].text }}\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1690,14 +1416,14 @@ module.exports = "<div class=\"contact\">\n  <table>\n    <tr>\n      <td>\n    
 /***/ 275:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"detail-wrap\">\n  <div class=\"detail\" *ngIf=\"detail\">\n    <div class=\"iframe-container\">\n      <iframe  class=\"video\" [src]=\"detail.data['portfolio-video'].video_link.value.url | UrlPipe\" frameborder=\"0\" allowfullscreen>></iframe>\n    </div>\n\n    <div class=\"text-wrap\">\n      <div class=\"left-text\">\n        <h3>{{detail.data[\"portfolio-video\"]?.video_title.value[\"0\"].text}}</h3>\n        <h3>{{detail.data[\"portfolio-video\"]?.video_year.value[\"0\"].text}}</h3>\n      </div>\n\n      <div class=\"right-text\">\n        <h3>{{detail.data[\"portfolio-video\"]?.director_credits.value[\"0\"].text}}</h3>\n        <h3>{{detail.data[\"portfolio-video\"]?.dp_credits.value[\"0\"].text}}</h3>\n        <h3>{{detail.data[\"portfolio-video\"]?.producer_credits.value[\"0\"].text}}</h3>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"detail-wrap\">\n  <div class=\"detail\" *ngIf=\"detail\">\n    <div class=\"iframe-container\">\n      <iframe  class=\"video\" [src]=\"detail.data['portfolio-video'].video_link.value.url | UrlPipe\" frameborder=\"0\" allowfullscreen>></iframe>\n    </div>\n\n    <div class=\"text-wrap\">\n      <div class=\"left-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.video_title.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.video_year.value[\"0\"].text}}</p>\n      </div>\n\n      <div class=\"right-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.director_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.dp_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.producer_credits.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 276:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrap\">\n  <ul class=\"feed-nav\">\n  <li *ngFor='let f of data.results; let i = index' class=\"feed-nav-li\">\n        <a (mouseenter)=\"aMouseEnter($event)\" [attr.id]=\"i\" *ngIf=\"f.type\" [routerLink]=\"['/',f.type, f.uid]\">\n          <h3>{{ i < 10 ? \"0\"+i+\".\" : i+\".\"  }} </h3>\n        </a>\n      <!-- <h1>works..</h1> -->\n    </li>\n  </ul>\n  <h3 class=\"project-title\">\n    {{titleString}}\n  </h3>\n</div>\n<!-- <h1>{{didUGetIt}}</h1> -->\n"
+module.exports = "<div class=\"wrap\">\n  <ul class=\"feed-nav\">\n  <li *ngFor='let f of data.results; let i = index' class=\"feed-nav-li\">\n        <a (mouseenter)=\"aMouseEnter($event)\"\n            [attr.id]=\"i\"\n            *ngIf=\"f.type\"\n            [routerLink]=\"['/','portfolio', f.uid]\">\n          <h4>{{ i < 10 ? \"0\"+i+\".\" : i+\".\"  }} </h4>\n        </a>\n      <!-- <h1>works..</h1> -->\n    </li>\n  </ul>\n  <h4 class=\"project-title\">\n    {{titleString}}\n  </h4>\n</div>\n<!-- <h1>{{didUGetIt}}</h1> -->\n"
 
 /***/ }),
 
@@ -1705,20 +1431,6 @@ module.exports = "<div class=\"wrap\">\n  <ul class=\"feed-nav\">\n  <li *ngFor=
 /***/ (function(module, exports) {
 
 module.exports = "<app-svg></app-svg>\n\n<!-- <div *ngIf=\"feed\" class=\"background-image\" [ngStyle]=\"{'background' : 'url(' + bgImgStem + ') no-repeat center center fixed'}\"> -->\n<div *ngIf=\"feed\" class=\"background-image\">\n  <h1>AA</h1>\n  <img [src]=\"bgImgStem\" alt=\"\">\n</div>\n\n\n\n<div class=\"feed\">\n  <!-- <div class=\"feed-content\" *ngIf=\"feed\">\n    <ul class=\"feed-ul\">\n      <li *ngFor='let f of feed.results' class=\"feed-li\">\n          <img [src]=\"f.data['portfolio-video'].thumbnail?.value.main.url\" alt=\"\">\n\n      </li>\n    </ul>\n  </div> -->\n  <app-feed-nav (indexChange)=\"onIndexChanged( $event )\" *ngIf=\"feed\" [data]=\"feed\"></app-feed-nav>\n</div>\n"
-
-/***/ }),
-
-/***/ 278:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"styling-detail\" *ngIf=\"styling_detail\" >\n  <!-- [style.background-color]=\"styling_detail.data['styling.background'].value\" -->\n\n<h1 class=\"styling-detail-title\">{{styling_detail.data[\"styling.title\"].value[\"0\"].text}}</h1>\n\n\n  <div class=\"styling-detail-cover styling-detail\" *ngIf=\"styling_detail.data['styling.cover'].value[0].image\"\n  [ngStyle]=\"{'background-image': 'url(' + styling_detail.data['styling.cover'].value[0].image.value.main.url + ')'}\">\n  </div>\n\n\n  <!-- <h1>{{styling_detail.data['styling.title'].value[0].text}}</h1> -->\n\n  <div class=\"styling-detail-content\">\n\n    <ul class=\"styling-detail-ul\">\n       <li class=\"styling-detail-li\" *ngFor=\"let d of styling_detail.data['styling.post'].value\">\n\n        <div class=\"styling-detail-img\" *ngIf=\"d.slice_type=='image'\">\n          <img src=\"{{d['non-repeat'].image.value.main.url}}\" alt=\"\">\n        </div>\n\n        <div class=\"styling-detail-gallery\" *ngIf=\"d.slice_type=='gallery'\">\n          <img src=\"{{g.repeat.image.value.main.url}}\" alt=\"\" *ngFor=\"let g of d.value.value\">\n        </div>\n\n        <div class=\"styling-detail-video\" *ngIf=\"d.slice_type=='video'\">\n          <iframe [src]=\"d['non-repeat'].id.value | youtubeEmbed\" width=\"\" height=\"\"></iframe>\n          <!-- {{d['non-repeat'].id.value | youtubeEmbed}} -->\n        </div>\n\n      </li>\n    </ul>\n    <!-- <div class=\"detail-credits\">\n      <ul class=\"detail-credits-ul\">\n        <li class=\"detail-credits-li\" *ngFor=\"let c of styling_detail.data['styling.credits'].value\">\n          {{c.role.value[\"0\"].text}}: {{c.name.value[\"0\"].text}}\n        </li>\n      </ul>\n    </div> -->\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 279:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"styling\">\n\n  <div class=\"styling-content\" *ngIf=\"styling\">\n    <ul class=\"styling-ul\">\n      <li *ngFor='let s of styling.results' class=\"styling-li\"\n      [style.left]=\"s.data['styling.position'].value[0].left.value+'vw'\"\n      [style.top]=\"s.data['styling.position'].value[0].top.value+'vh'\"\n      draggable>\n      <!-- on-mouseover='showBackgroundStyling(true)' on-mouseout=\"showBackgroundStyling(false)\" -->\n      <!-- <img [src]=\"s.data['styling.cover'].value[0].image.value.main.url\" alt=\"\" class=\"styling-cover\"\n      *ngIf=\"isBackgroundStyling\"\n      > -->\n        <a [routerLink]=\"['/styling', s.uid]\" class=\"styling-a\">\n          <h1 class=\"styling-title\" [style.font-size]=\"s.data['styling.position'].value[0].pixels.value+'px'\">\n            {{s.data['styling.title'].value['0'].text}}\n          </h1>\n        </a>\n\n        <!-- [class.title_left]=\"s.data['styling.cover'].value[0].left.value>0\"\n        [class.title_right]=\"s.data['styling.cover'].value[0].left.value==0\" -->\n <!-- | productFilter:listFilter -->\n      </li>\n    </ul>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -1757,7 +1469,7 @@ module.exports = "<div class=\"share\">\n  <h2 class=\"share-button\" (click)=\"
 
 /***/ }),
 
-/***/ 34:
+/***/ 30:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

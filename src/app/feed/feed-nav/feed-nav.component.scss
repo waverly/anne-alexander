@@ -9,14 +9,13 @@
     transform-origin: right;
     top: 0;
     height: 50px;
-    width: 200px;
+    width: 50vh;
     line-height: 50px;
     text-align: right;
     right: 30px;
     padding: 0 1em;
     position: fixed;
     z-index: 10;
-    font-size: $font-size-h3;
   }
 
   .feed-nav{
@@ -38,9 +37,6 @@
     li{
       display: inline-block;
       margin: 0 1rem;
-      h3{
-        font-size: $font-size-h3;
-        color: $red;
       }
     }
 
@@ -48,8 +44,8 @@
     h3{
       color: $electric-blue;
     }
-  }
 }
+
 
 
 }
