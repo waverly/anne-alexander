@@ -1,14 +1,14 @@
 <app-svg></app-svg>
 
 <!-- <div *ngIf="feed" class="background-image" [ngStyle]="{'background' : 'url(' + bgImgStem + ') no-repeat center center fixed'}"> -->
-<div *ngIf="feed" class="background-image">
+<div class="background-image">
   <h1>AA</h1>
   <img [src]="bgImgStem" alt="">
 </div>
 
 
 
-<div class="feed">
+<div class="feed" *ngIf="feed" >
   <!-- <div class="feed-content" *ngIf="feed">
     <ul class="feed-ul">
       <li *ngFor='let f of feed.results' class="feed-li">
