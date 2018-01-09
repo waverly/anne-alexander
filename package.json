@@ -1,5 +1,5 @@
 {
-  "name": "anne alexander",
+  "name": "annealexander",
   "version": "0.0.0",
   "license": "WAVERLY MANDEL",
   "description": "ANNE ALEXANDER",
@@ -57,7 +57,7 @@
     "codelyzer": "~2.0.0-beta.1",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
-    "node-sass": "3.7.0",
+    "node-sass": "4.5.3",
     "karma": "1.2.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
