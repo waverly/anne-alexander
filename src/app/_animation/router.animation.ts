@@ -13,7 +13,7 @@ export const routerTransition = trigger('routerTransition', [
            query(':leave',
                [
                    style({ opacity: 1 }),
-                   animate('5s', style({ opacity: 0 }))
+                   animate('2s', style({ opacity: 0 }))
                ],
                { optional: true }
            ),
@@ -21,7 +21,7 @@ export const routerTransition = trigger('routerTransition', [
            query(':enter',
                [
                    style({ opacity: 0 }),
-                   animate('5s', style({ opacity: 1 }))
+                   animate('2s', style({ opacity: 1 }))
                ],
                { optional: true }
            )

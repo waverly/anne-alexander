@@ -5,6 +5,6 @@
       [src]="feed.results[this.activeId].data['portfolio-video']?.thumbnail.value.main.url" alt="">
   </div>
   <div class="feed">
-    <app-feed-nav (indexChange)="onIndexChanged( $event )" *ngIf="feed" [data]="feed"></app-feed-nav>
+    <app-feed-nav (indexChange)="onIndexChanged( $event )" [data]="feed"></app-feed-nav>
   </div>
 </div>

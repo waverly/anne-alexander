@@ -18,17 +18,7 @@ import { fadeInAnimation } from './../_animation/index';
 @Component({
   // selector: 'app-feed',
   templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.scss'],
-  animations: [
-    trigger('test', [
-      transition('void => *', [
-        style({ opacity: 0 }),
-        // animation and styles at end of transition
-        animate('5s', style({ opacity: 1 }))
-      ])
-    ])
-
-  ]
+  styleUrls: ['./feed.component.scss']
 })
 
 

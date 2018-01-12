@@ -30,13 +30,13 @@ exports.fadeInAnimation = animations_1.trigger('fadeInAnimation', [
         // styles at start of transition
         animations_1.style({ opacity: 0 }),
         // animation and styles at end of transition
-        animations_1.animate('5s', animations_1.style({ opacity: 1 }))
+        animations_1.animate('2s', animations_1.style({ opacity: 1 }))
     ]),
     animations_1.transition(':leave', [
         // styles at start of transition
         animations_1.style({ opacity: 1 }),
         // animation and styles at end of transition
-        animations_1.animate('5s', animations_1.style({ opacity: 0 }))
+        animations_1.animate('2s', animations_1.style({ opacity: 0 }))
     ])
 ]);
 // import { trigger, state, animate, transition, style } from '@angular/animations';
@@ -129,11 +129,11 @@ exports.routerTransition = animations_1.trigger('routerTransition', [
         ], { optional: true }),
         animations_1.query(':leave', [
             animations_1.style({ opacity: 1 }),
-            animations_1.animate('5s', animations_1.style({ opacity: 0 }))
+            animations_1.animate('2s', animations_1.style({ opacity: 0 }))
         ], { optional: true }),
         animations_1.query(':enter', [
             animations_1.style({ opacity: 0 }),
-            animations_1.animate('5s', animations_1.style({ opacity: 1 }))
+            animations_1.animate('2s', animations_1.style({ opacity: 1 }))
         ], { optional: true })
     ])
 ]);
@@ -622,7 +622,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.wrap {\n  z-index: 15;\n  position: fixed; }\n.wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 50vh;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10; }\n.wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    /* padding: 0 1em; */\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n.wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n.wrap a {\n    transition: all 0.5s ease;\n    -webkit-transition: all 0.5s ease;\n    -moz-transition: all 0.5s ease;\n    -ms-transition: all 0.5s ease;\n    -o-transition: all 0.5s ease; }\n.wrap a:hover h3 {\n      margin-right: 5px;\n      color: #00C8FF; }\n.wrap a:active {\n      margin-right: 5px !important; }\n.wrap .active {\n    color: #00C8FF; }\n.wrap .project-title {\n    -webkit-transition: all 1s ease;\n    transition: all 1s ease; }\n", ""]);
+exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.loaded {\n  color: green; }\n.wrap {\n  z-index: 15;\n  position: fixed; }\n.wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 50vh;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10; }\n.wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n.wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n.wrap a {\n    transition: all 0.5s ease;\n    -webkit-transition: all 0.5s ease;\n    -moz-transition: all 0.5s ease;\n    -ms-transition: all 0.5s ease;\n    -o-transition: all 0.5s ease; }\n.wrap a:hover h3 {\n      color: #00C8FF; }\n.wrap a:active {\n      color: #00C8FF; }\n.wrap .active {\n    color: #00C8FF; }\n.wrap .project-title {\n    -webkit-transition: all 1s ease;\n    transition: all 1s ease; }\n", ""]);
 
 // exports
 
@@ -646,19 +646,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var prismic_service_1 = __webpack_require__("../../../../../src/app/shared/prismic.service.ts");
 var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
-var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
 var FeedNavComponent = /** @class */ (function () {
-    function FeedNavComponent(_globalService, _feedService, document) {
+    function FeedNavComponent(_globalService, _feedService) {
         this._globalService = _globalService;
         this._feedService = _feedService;
-        this.document = document;
         this.indexChange = new core_1.EventEmitter();
         this.titleString = "";
         this.titleArray = [];
@@ -692,11 +688,30 @@ var FeedNavComponent = /** @class */ (function () {
             selector: 'app-feed-nav',
             template: __webpack_require__("../../../../../src/app/feed/feed-nav/feed-nav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/feed/feed-nav/feed-nav.component.scss")],
+            animations: [
+                animations_1.trigger('fadeNav', [
+                    // route 'enter' transition
+                    animations_1.transition(':enter', [
+                        // styles at start of transition
+                        animations_1.style({ opacity: 0 }),
+                        // animation and styles at end of transition
+                        animations_1.animate('5s', animations_1.keyframes([
+                            animations_1.style({ opacity: .1, offset: 0 }),
+                            animations_1.style({ opacity: .5, offset: 0.3 }),
+                            animations_1.style({ opacity: 1, offset: 1.0 })
+                        ]))
+                    ]),
+                    animations_1.transition(':leave', [
+                        // styles at start of transition
+                        animations_1.style({ opacity: 1 }),
+                        // animation and styles at end of transition
+                        animations_1.animate('5s', animations_1.style({ opacity: 0 }))
+                    ]),
+                ])
+            ]
         }),
-        __param(2, core_1.Inject(platform_browser_1.DOCUMENT)),
         __metadata("design:paramtypes", [variables_service_1.GlobalService,
-            prismic_service_1.PrismicService,
-            Document])
+            prismic_service_1.PrismicService])
     ], FeedNavComponent);
     return FeedNavComponent;
 }());
@@ -708,7 +723,7 @@ exports.FeedNavComponent = FeedNavComponent;
 /***/ "../../../../../src/app/feed/feed.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"feedWrap\" *ngIf=\"feed\">\n  <div class=\"background-image\">\n    <!-- <h1>AA</h1> -->\n    <img *ngIf=\"feed.results[this.activeId].data['portfolio-video']?.thumbnail\"\n      [src]=\"feed.results[this.activeId].data['portfolio-video']?.thumbnail.value.main.url\" alt=\"\">\n  </div>\n  <div class=\"feed\">\n    <app-feed-nav (indexChange)=\"onIndexChanged( $event )\" *ngIf=\"feed\" [data]=\"feed\"></app-feed-nav>\n  </div>\n</div>\n"
+module.exports = "<div class=\"feedWrap\" *ngIf=\"feed\">\n  <div class=\"background-image\">\n    <!-- <h1>AA</h1> -->\n    <img *ngIf=\"feed.results[this.activeId].data['portfolio-video']?.thumbnail\"\n      [src]=\"feed.results[this.activeId].data['portfolio-video']?.thumbnail.value.main.url\" alt=\"\">\n  </div>\n  <div class=\"feed\">\n    <app-feed-nav (indexChange)=\"onIndexChanged( $event )\" [data]=\"feed\"></app-feed-nav>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -752,7 +767,6 @@ var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var prismic_service_1 = __webpack_require__("../../../../../src/app/shared/prismic.service.ts");
 var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
 var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
 var FeedComponent = /** @class */ (function () {
     function FeedComponent(_globalService, _feedService, document) {
         this._globalService = _globalService;
@@ -801,16 +815,7 @@ var FeedComponent = /** @class */ (function () {
     FeedComponent = __decorate([
         core_1.Component({
             template: __webpack_require__("../../../../../src/app/feed/feed.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/feed/feed.component.scss")],
-            animations: [
-                animations_1.trigger('test', [
-                    animations_1.transition('void => *', [
-                        animations_1.style({ opacity: 0 }),
-                        // animation and styles at end of transition
-                        animations_1.animate('5s', animations_1.style({ opacity: 1 }))
-                    ])
-                ])
-            ]
+            styles: [__webpack_require__("../../../../../src/app/feed/feed.component.scss")]
         }),
         __param(2, core_1.Inject(platform_browser_1.DOCUMENT)),
         __metadata("design:paramtypes", [variables_service_1.GlobalService,
@@ -868,6 +873,7 @@ var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var router_1 = __webpack_require__("../../../router/esm5/router.js");
 // import { fadeInAnimation } from './../../_animation/index';
 __webpack_require__("../../../../snapsvg-cjs/dist/snap.svg-cjs.js");
+var index_1 = __webpack_require__("../../../../../src/app/_animation/index.ts");
 var SvgComponent = /** @class */ (function () {
     function SvgComponent(_router) {
         this._router = _router;
@@ -878,14 +884,7 @@ var SvgComponent = /** @class */ (function () {
         // attempt to call a fx first, on load, and see if it can act as a loading
         this.createSvg();
     };
-    SvgComponent.prototype.ngOnDestroy = function () {
-        // this.createSvg.alert;
-        alert('omg it is being destroyed');
-    };
     SvgComponent.prototype.createSvg = function () {
-        var alert = function alert() {
-            alert('inside of createSvg');
-        };
         var svgArray = [
             "M-0.5,0.5v1020h1440V0.5H-0.5z M682.628,452.872L682.628,452.872L682.628,452.872L682.628,452.872l-569.893-86.478l565.358,85.08l0,0l1.349,6.175l0,0l135.379-138.565L682.628,452.872L682.628,452.872z",
             "M-0.5,0.5v1020h1440V0.5H-0.5z M1361.474,943.74c-41.465,54.697-395.51,18.393-440.434-7.812c-67.84-39.574-386.412-17.389-446.426-12.167c-110.823,9.643-269.814,50.507-354.993,17.908c-85.179-32.599-65.102-189.413-8.191-325.603s23.698-275.865,2.048-354.272s95.827-183.67,178.16-198.585s448.164,52.034,555.761,24.536s353.631-36.235,395.12-28.418c112.253,21.149,44.239,106.919,36.167,218.903c-8.072,111.983,86.008,401.319,86.008,401.319S1402.94,889.043,1361.474,943.74z",
@@ -903,10 +902,6 @@ var SvgComponent = /** @class */ (function () {
             preserveAspectRatio: 'none'
         });
         var path = svgCanvas.path(svgArray[0]);
-        var close = function () {
-            path.animate({ d: svgArray[0]
-            }, 1000, mina.easein);
-        };
         var step1 = function () {
             path.animate({ d: svgArray[0]
             }, 1000, mina.easein, step2);
@@ -930,7 +925,10 @@ var SvgComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-svg',
             template: __webpack_require__("../../../../../src/app/feed/svg/svg.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/feed/svg/svg.component.scss")]
+            styles: [__webpack_require__("../../../../../src/app/feed/svg/svg.component.scss")],
+            animations: [index_1.fadeInAnimation],
+            // attach the fade in animation to the host (root) element of this component
+            host: { '[@fadeInAnimation]': '' }
         }),
         __metadata("design:paramtypes", [router_1.Router])
     ], SvgComponent);

@@ -3,16 +3,6 @@ import {Router} from '@angular/router';
 // import { fadeInAnimation } from './../../_animation/index';
 import "snapsvg-cjs";
 import { fadeInAnimation } from '../../_animation/index';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  keyframes,
-  query,
-  stagger
-} from '@angular/animations';
 
 declare var Snap: any;
 
@@ -20,9 +10,12 @@ declare var Snap: any;
 @Component({
   selector: 'app-svg',
   templateUrl: './svg.component.html',
-  styleUrls: ['./svg.component.scss']
+  styleUrls: ['./svg.component.scss'],
+  animations: [fadeInAnimation],
+  // attach the fade in animation to the host (root) element of this component
+  host: { '[@fadeInAnimation]': '' }
 })
-export class SvgComponent implements OnInit, OnDestroy {
+export class SvgComponent implements OnInit {
 
 
   public location = '' ;
@@ -36,17 +29,7 @@ export class SvgComponent implements OnInit, OnDestroy {
     this.createSvg();
   }
 
-  ngOnDestroy(){
-    // this.createSvg.alert;
-    alert('omg it is being destroyed');
-
-  }
-
   createSvg() {
-
-    var alert function alert(){
-      alert('inside of createSvg');
-    }
 
     let svgArray = [
       "M-0.5,0.5v1020h1440V0.5H-0.5z M682.628,452.872L682.628,452.872L682.628,452.872L682.628,452.872l-569.893-86.478l565.358,85.08l0,0l1.349,6.175l0,0l135.379-138.565L682.628,452.872L682.628,452.872z",
@@ -72,15 +55,6 @@ export class SvgComponent implements OnInit, OnDestroy {
 
 
     var path = svgCanvas.path(svgArray[0]);
-
-    var close = function() {
-      path.animate({ d:
-        svgArray[0]
-        },
-        1000,
-        mina.easein
-      );
-    };
 
     var step1 = function() {
       path.animate({ d:

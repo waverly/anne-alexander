@@ -1,5 +1,9 @@
 @import 'variables';
 
+.loaded{
+  color: green;
+}
+
 .wrap{
   z-index: $z-nav;
   position: fixed;
@@ -28,7 +32,6 @@
     height: 50px;
     line-height: 50px;
     right: 0;
-    /* padding: 0 1em; */
     position: fixed;
 
     width: 100vh;
@@ -49,13 +52,12 @@
 
    &:hover{
      h3{
-       margin-right: 5px;
        color: $electric-blue;
      }
    }
 
    &:active{
-     margin-right: 5px!important;
+     color: $electric-blue;
    }
   }
 
