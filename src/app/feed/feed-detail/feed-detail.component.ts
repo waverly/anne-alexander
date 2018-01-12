@@ -19,6 +19,12 @@ export class FeedDetailComponent implements OnInit {
     private _feedService: PrismicService
   ) { }
 
+  transformUrl(url) {
+    url = url.slice(17,url.length)
+    let newUrl = "https://player.vimeo.com/video" + url;
+    return newUrl;
+  }
+
   ngOnInit() {
     let id = this._route.snapshot.params['id'];
     let type = this._route.snapshot.url["0"].path;

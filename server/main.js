@@ -15,7 +15,9 @@ const app = express();
 
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
-app.set('views', __dirname + '/dist');
+app.set('views', __dirname + '/../dist');
+
+// ^made changes in filepath.. was previously '/dist'
 
 // app.use(function(req, res, next) {
 //     if((!req.secure) && (req.get('X-Forwarded-Proto') !== 'https')) {

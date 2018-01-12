@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
-import {PrismicService} from './prismic.service';
-import {GlobalService} from './variables.service';
+import {PrismicService} from './shared/prismic.service';
+import {GlobalService} from './shared/variables.service';
 
 @NgModule({
   declarations: [

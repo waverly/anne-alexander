@@ -1,22 +1,22 @@
-webpackJsonp([2,5],{
+webpackJsonp(["styles"],{
 
-/***/ 242:
+/***/ "../../../../../src/app/styles.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(316);
+var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"import\":false}!../../../../postcss-loader/lib/index.js?{\"ident\":\"postcss\",\"sourceMap\":false}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/waverly/Documents/Web/anne-alexander/src/app/styles\"]}!../../../../../src/app/styles.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(639)(content, {});
+var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js?{\"sourceMap\":false}!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/index.js!./styles.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js?{\"sourceMap\":false}!../../node_modules/postcss-loader/index.js!../../node_modules/sass-loader/index.js!./styles.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--8-1!../../node_modules/postcss-loader/lib/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--8-3!./styles.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--8-1!../../node_modules/postcss-loader/lib/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--8-3!./styles.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -27,22 +27,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 316:
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"import\":false}!../../../../postcss-loader/lib/index.js?{\"ident\":\"postcss\",\"sourceMap\":false}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[\"/Users/waverly/Documents/Web/anne-alexander/src/app/styles\"]}!../../../../../src/app/styles.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(317)();
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n/*....................................General settings..................................*/\n/*.....................TEXT MARK STYLES......................*/\n::-moz-selection {\n  background: #00C8FF;\n  text-shadow: none; }\n\n::selection {\n  background: #00C8FF;\n  text-shadow: none; }\n\n/*.....................ACTIVE CLASSES......................*/\n.active {\n  opacity: 0.1; }\n\na:active {\n  color: #00C8FF; }\n\na:hover {\n  color: #00C8FF; }\n\n.blacked_text {\n  color: #FFF; }\n\n.blacked_path {\n  fill: #FFF; }\n\n.blacked_background {\n  background-color: #000; }\n\n/*....................HIDING SCROLLBAR.....................*/\n::-webkit-scrollbar {\n  display: none; }\n\n* {\n  -webkit-overflow-scrolling: touch; }\n\n*, *:before, *:after {\n  box-sizing: inherit;\n  outline: 0; }\n\n/*.....................GENERAL STYLES......................*/\nhtml {\n  font-family: helvetica;\n  width: 100%;\n  margin: 0, 0;\n  padding: 0, 0;\n  box-sizing: border-box;\n  background-color: transparent; }\n\nbody {\n  width: 100vw;\n  height: auto;\n  margin: 0, 0;\n  padding: 0, 0;\n  display: block;\n  position: relative;\n  background-color: black;\n  color: #FF3700;\n  font-size: 10px; }\n\np, a, li {\n  font-size: 14px;\n  list-style-type: none;\n  letter-spacing: 1px;\n  color: #FF3700;\n  line-height: 19px; }\n\ninput, textarea, select, a, li {\n  text-decoration: none; }\n\na {\n  cursor: pointer;\n  font-size: inherit; }\n\n.a-hover {\n  color: #000;\n  transition: color 0.4s ease;\n  -webkit-transition: color 0.4s ease;\n  -moz-transition: color 0.4s ease;\n  -ms-transition: color 0.4s ease;\n  -o-transition: color 0.4s ease; }\n  .a-hover:hover {\n    color: #F0F0F0;\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n    @media only screen and (min-width: 0px) and (max-device-width: 767px) {\n      .a-hover:hover {\n        color: #000 !important; } }\n    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {\n      .a-hover:hover {\n        color: #000 !important; } }\n    @media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {\n      .a-hover:hover {\n        color: #000 !important; } }\n\np {\n  font-size: 14px;\n  line-height: 19px;\n  font-family: helvetica;\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    p {\n      font-size: 12px;\n      line-height: 17px; } }\n\nh1 {\n  font-size: 49px;\n  line-height: 50px;\n  font-family: \"avus\";\n  letter-spacing: 2px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    h1 {\n      font-size: 36px; } }\n\nh2 {\n  font-size: 36px;\n  line-height: 36px;\n  font-family: \"avus\";\n  letter-spacing: 0px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    h2 {\n      font-size: 30px;\n      line-height: 36px; } }\n\nh3 {\n  font-size: 25px;\n  line-height: 38px;\n  font-family: \"avus\";\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    h3 {\n      font-size: 22px;\n      line-height: 20px; } }\n\nh4 {\n  font-size: 18px !important;\n  line-height: 28px;\n  font-family: \"avus\";\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n  @media only screen and (min-width: 0px) and (max-width: 767px) {\n    h4 {\n      font-size: 18px;\n      line-height: 20px; } }\n\n/*.........................MAIN............................*/\ntable {\n  width: 100vw;\n  height: 100vh; }\n  table tr td {\n    vertical-align: middle; }\n", ""]);
+exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\nbody {\n  line-height: 1; }\nol, ul {\n  list-style: none; }\nblockquote, q {\n  quotes: none; }\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n/*....................................General settings..................................*/\n/*.....................TEXT MARK STYLES......................*/\n::-moz-selection {\n  background: #00C8FF;\n  text-shadow: none; }\n::selection {\n  background: #00C8FF;\n  text-shadow: none; }\n/*.....................ACTIVE CLASSES......................*/\na:active {\n  color: #00C8FF; }\na:hover {\n  color: #00C8FF; }\n.blacked_text {\n  color: #FFF; }\n.blacked_path {\n  fill: #FFF; }\n.blacked_background {\n  background-color: #000; }\n/*....................HIDING SCROLLBAR.....................*/\n::-webkit-scrollbar {\n  display: none; }\n* {\n  -webkit-overflow-scrolling: touch; }\n*, *:before, *:after {\n  -webkit-box-sizing: inherit;\n          box-sizing: inherit;\n  outline: 0; }\n/*.....................GENERAL STYLES......................*/\nhtml {\n  font-family: helvetica;\n  width: 100%;\n  margin: 0, 0;\n  padding: 0, 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  background-color: transparent; }\nbody {\n  width: 100vw;\n  height: auto;\n  margin: 0, 0;\n  padding: 0, 0;\n  display: block;\n  position: relative;\n  background-color: black;\n  color: #FF3700;\n  font-size: 10px; }\np, a, li {\n  font-size: 14px;\n  list-style-type: none;\n  letter-spacing: 1px;\n  color: #FF3700;\n  line-height: 19px; }\ninput, textarea, select, a, li {\n  text-decoration: none; }\na {\n  cursor: pointer;\n  font-size: inherit; }\n.a-hover {\n  color: #000;\n  transition: color 0.4s ease;\n  -webkit-transition: color 0.4s ease;\n  -moz-transition: color 0.4s ease;\n  -ms-transition: color 0.4s ease;\n  -o-transition: color 0.4s ease; }\n.a-hover:hover {\n    color: #F0F0F0;\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n    /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-device-width: 767px) {\n      .a-hover:hover {\n        color: #000 !important; } }\n@media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {\n      .a-hover:hover {\n        color: #000 !important; } }\n@media only screen and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: landscape) {\n      .a-hover:hover {\n        color: #000 !important; } }\np {\n  font-size: 14px;\n  line-height: 19px;\n  font-family: helvetica;\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    p {\n      font-size: 12px;\n      line-height: 17px; } }\nh1 {\n  font-size: 49px;\n  line-height: 50px;\n  font-family: \"avus\";\n  letter-spacing: 2px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    h1 {\n      font-size: 36px; } }\nh2 {\n  font-size: 36px;\n  line-height: 36px;\n  font-family: \"avus\";\n  letter-spacing: 0px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    h2 {\n      font-size: 30px;\n      line-height: 36px; } }\nh3 {\n  font-size: 25px;\n  line-height: 38px;\n  font-family: \"avus\";\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    h3 {\n      font-size: 22px;\n      line-height: 20px; } }\nh4 {\n  font-size: 18px !important;\n  line-height: 28px;\n  font-family: \"avus\";\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    h4 {\n      font-size: 18px;\n      line-height: 20px; } }\n/*.........................MAIN............................*/\ntable {\n  width: 100vw;\n  height: 100vh; }\ntable tr td {\n    vertical-align: middle; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 317:
+/***/ "../../../../css-loader/lib/css-base.js":
 /***/ (function(module, exports) {
 
 /*
@@ -50,21 +50,19 @@ exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 |
 	Author Tobias Koppers @sokra
 */
 // css base code, injected by the css-loader
-module.exports = function() {
+module.exports = function(useSourceMap) {
 	var list = [];
 
 	// return the list of modules as css string
 	list.toString = function toString() {
-		var result = [];
-		for(var i = 0; i < this.length; i++) {
-			var item = this[i];
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
 			if(item[2]) {
-				result.push("@media " + item[2] + "{" + item[1] + "}");
+				return "@media " + item[2] + "{" + content + "}";
 			} else {
-				result.push(item[1]);
+				return content;
 			}
-		}
-		return result.join("");
+		}).join("");
 	};
 
 	// import a list of modules into the list
@@ -96,10 +94,38 @@ module.exports = function() {
 	return list;
 };
 
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
 
 /***/ }),
 
-/***/ 639:
+/***/ "../../../../style-loader/addStyles.js":
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +378,13 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 641:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(242);
+module.exports = __webpack_require__("../../../../../src/app/styles.scss");
 
 
 /***/ })
 
-},[641]);
-//# sourceMappingURL=styles.bundle.map
+},[2]);
+//# sourceMappingURL=styles.bundle.js.map

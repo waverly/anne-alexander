@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 
 import { FeedComponent } from './feed/feed.component';
@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavComponent } from './nav/nav.component';
 import { SvgComponent } from './feed/svg/svg.component';
+import { notFoundComponent } from './notFound/notFound.component';
 import { ShareComponent } from './share/share.component';
 import { LogoComponent } from './logo/logo.component';
 import { LogotypeComponent } from './logo/logotype.component';
@@ -23,9 +24,6 @@ import { ResponsiveModule } from 'ng2-responsive';
 
 import { UrlPipe } from './shared/url.pipe';
 
-import { PrismicService } from './shared/prismic.service';
-
-// import { SafePipe } from './shared/safeUrl.pipe';
 
 
 
@@ -42,29 +40,27 @@ import { PrismicService } from './shared/prismic.service';
     FeedComponent,
     FeedNavComponent,
     FeedDetailComponent,
+    notFoundComponent,
     EncodeURIPipe,
     UrlPipe
     // SafePipe
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     ResponsiveModule,
     SharedModule,
     RouterModule.forRoot([
-      {path:'', component: FeedComponent, pathMatch: 'full'},
-      {path: 'portfolio/:id', component: FeedDetailComponent },
-      {path: 'about', component: AboutComponent},
+      {path:'', component: FeedComponent, pathMatch: 'full', data: { state: 'home' }},
+      {path: 'portfolio/:id', component: FeedDetailComponent, pathMatch: 'full', data: { state: 'detail'}},
+      {path: 'about', component: AboutComponent, pathMatch: 'full', data: { state: 'about' }},
       {path: '**', redirectTo: '', pathMatch: 'full'}
-      // ,
-      // { path: 'editorial', component: FeedDetailComponent },
-      // { path: 'styling/:styling', component: StylingDetailComponent },
-      // { path: 'styling', component: StylingComponent },
 
     ]),
   ],
-  providers: [GlobalService, PrismicService],
+  providers: [GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

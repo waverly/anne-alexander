@@ -2,16 +2,24 @@
 @import 'variables';
 @import 'mixins';
 
+button{
+  position: fixed;
+  z-index: 1000;
+}
+
 svg{
-  /*width: 100vw;
-  height: 100vh;
-  */
   z-index: 1000;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.white{
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
 }
 
 .background-image{
@@ -21,12 +29,6 @@ svg{
   height: 100vh;
   width: 100vw;
   background-color: $dark-grey;
-  // background: no-repeat center center fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
-  transition: 2s all;
   display: flex;
   justify-content: center;
   align-items: center;

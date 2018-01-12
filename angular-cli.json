@@ -28,10 +28,10 @@
       "scripts": [
         "../node_modules/snapsvg/dist/snap.svg.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
       }
     }
   ],

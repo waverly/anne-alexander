@@ -40,11 +40,33 @@
       }
     }
 
- a:hover{
-    h3{
-      color: $electric-blue;
-    }
-}
+ a{
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+
+   &:hover{
+     h3{
+       margin-right: 5px;
+       color: $electric-blue;
+     }
+   }
+
+   &:active{
+     margin-right: 5px!important;
+   }
+  }
+
+  .active{
+    color: $electric-blue;
+  }
+
+  .project-title{
+    transition: all 1s ease;
+  }
+
 
 
 

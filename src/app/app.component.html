@@ -1,7 +1,10 @@
 
-
 <app-logo></app-logo>
-
 <app-nav></app-nav>
 
-<router-outlet ></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<main [@routerTransition]="getRouterOutletState(o)">
+  <router-outlet #o="outlet"></router-outlet>
+</main>
+
+<app-svg  *ngIf="this.currentRoute==='home'"></app-svg>

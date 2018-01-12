@@ -4,13 +4,16 @@ import {GlobalService} from './../../shared/variables.service';
 import { DOCUMENT } from '@angular/platform-browser';
 import {IFeed}from './../feed';
 // import fade in animation
-import { fadeInAnimation } from './../../_animation/index';
+//import { fadeInAnimation } from './../../_animation/index';
 import * as $ from 'jquery';
 
 @Component({
   selector: 'app-feed-nav',
   templateUrl: './feed-nav.component.html',
-  styleUrls: ['./feed-nav.component.scss']
+  styleUrls: ['./feed-nav.component.scss'],
+  // animations: [fadeInAnimation],
+  // // // attach the fade in animation to the host (root) element of this component
+  // host: { '[@fadeInAnimation]': '' }
 })
 export class FeedNavComponent implements OnInit {
 
@@ -19,6 +22,7 @@ export class FeedNavComponent implements OnInit {
   titleString: string = "";
   titleArray: any[]=[];
   id: string;
+  activeId: number = 2;
 
   constructor(
     private _globalService: GlobalService,
@@ -27,9 +31,12 @@ export class FeedNavComponent implements OnInit {
   ) { }
 
   ngOnInit(): void{
-    console.log('in feed-nav ng on init');
-    console.log(this.data);
     this.createTitleArray();
+  }
+
+  updateId(i){
+    this.activeId = i;
+    this.indexChange.emit(i);
   }
 
   createTitleArray(){
@@ -39,13 +46,5 @@ export class FeedNavComponent implements OnInit {
       this.titleArray.push(title);
     }
   }
-
-  aMouseEnter(event){
-    this.titleString = this.titleArray[event.srcElement.id];
-    this.id = event.srcElement.id;
-    this.indexChange.emit(this.id);
-  }
-
-
 
 }
