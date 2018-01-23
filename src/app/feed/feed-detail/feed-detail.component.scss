@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'mixins';
+
 
 .detail-wrap{
   width: 100vw;
@@ -61,5 +63,31 @@
     height:60vh;
     display: block;
     margin: auto;
+  }
+}
+
+@media (max-width: $break-phone-landscape) {
+  .detail{
+    width: 100%;
+    // padding: $margin-sides;
+  }
+
+  .text-wrap{
+    flex-direction: column;
+    padding: $margin-sides;
+
+    p{
+      font-size: $font-size-p;
+      line-height: $line-height-p;
+    }
+
+    .left-text{
+      width: 100%;
+      text-align: center;
+    }
+    .right-text{
+      width: 100%;
+      text-align: center;
+    }
   }
 }

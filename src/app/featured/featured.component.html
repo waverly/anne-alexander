@@ -1,0 +1,13 @@
+<div class="featured-wrap" *ngIf="feed">
+  <ul>
+    <li *ngFor="let f of feed.results; index as i">
+      <a
+          [attr.id]="i"
+          [routerLink]="['/','portfolio', f.uid]">
+        <h3>
+        {{ i < 10 ? "0"+i+"." : i+"."  }} {{f.data["portfolio-video"].video_title.value["0"].text}}
+        </h3>
+      </a>
+    </li>
+  </ul>
+</div>

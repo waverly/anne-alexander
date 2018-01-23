@@ -5,7 +5,8 @@ import {
   animate,
   transition,
   keyframes,
-  query
+  query,
+  stagger
 
 } from '@angular/animations';
 
@@ -18,7 +19,7 @@ export const fadeInAnimation =
             style({ opacity: 0 }),
 
             // animation and styles at end of transition
-            animate('2s', style({ opacity: 1 }))
+            animate('.6s', style({ opacity: 1 }))
         ]),
         transition(':leave', [
 
@@ -26,11 +27,10 @@ export const fadeInAnimation =
             style({ opacity: 1 }),
 
             // animation and styles at end of transition
-            animate('2s', style({ opacity: 0 }))
+            animate('.6s', style({ opacity: 0 }))
         ])
-
-
     ]);
+
 
 
 

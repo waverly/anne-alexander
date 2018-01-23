@@ -23,6 +23,7 @@ import { EncodeURIPipe } from './shared/encodeURI.pipe';
 import { ResponsiveModule } from 'ng2-responsive';
 
 import { UrlPipe } from './shared/url.pipe';
+import { FeaturedComponent } from './featured/featured.component';
 
 
 
@@ -42,7 +43,8 @@ import { UrlPipe } from './shared/url.pipe';
     FeedDetailComponent,
     notFoundComponent,
     EncodeURIPipe,
-    UrlPipe
+    UrlPipe,
+    FeaturedComponent
     // SafePipe
   ],
   imports: [
@@ -54,6 +56,7 @@ import { UrlPipe } from './shared/url.pipe';
     SharedModule,
     RouterModule.forRoot([
       {path:'', component: FeedComponent, pathMatch: 'full', data: { state: 'home' }},
+      {path: 'portfolio', component: FeaturedComponent, pathMatch: 'full', data: { state: 'featured'}},
       {path: 'portfolio/:id', component: FeedDetailComponent, pathMatch: 'full', data: { state: 'detail'}},
       {path: 'about', component: AboutComponent, pathMatch: 'full', data: { state: 'about' }},
       {path: '**', redirectTo: '', pathMatch: 'full'}

@@ -30,7 +30,10 @@ export class FeedComponent implements OnInit {
   listFilter: string;
   errorMessage: string;
   feed: IFeed;
+  results: any;
   activeId: string = "2";
+  i: number = 0;
+  // src: string = "feed.results["0"].data["featured-img"]["featured-img"].value.main.url";
 
   show = false;
 
@@ -59,11 +62,13 @@ export class FeedComponent implements OnInit {
      }
 
      getPage(page): void{
-       this._feedService.getFeed('portfolio-video', page)
+       this._feedService.getFeed('featured-img', page)
        .subscribe(
          feed=>{
            if(page==0){
              this.feed=feed;
+             setInterval( ()=>{this.imgCycle();}, 4000)
+
            }else{
              console.log('in else block');
           }
@@ -73,6 +78,22 @@ export class FeedComponent implements OnInit {
            this.errorMessage=error;
          }
        );
+     }
+
+     imgCycle(){
+       if(this.feed){
+         console.log(this.feed.results.length, this.i);
+         if ( this.i < 1){
+           this.i++;
+           console.log('in if', this.i);
+         }
+         else{
+           this.i = 0;
+           console.log('in else',  this.i);
+         }
+
+       }
+
      }
 
      onIndexChanged( index: string ){

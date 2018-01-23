@@ -1,10 +1,13 @@
 <div class="feedWrap" *ngIf="feed">
   <div class="background-image">
     <!-- <h1>AA</h1> -->
-    <img *ngIf="feed.results[this.activeId].data['portfolio-video']?.thumbnail"
-      [src]="feed.results[this.activeId].data['portfolio-video']?.thumbnail.value.main.url" alt="">
+    <img
+      *ngIf="feed.results"
+      alt=""
+      [src]="feed.results[i].data['featured-img']['featured-img'].value.main.url"
+      >
   </div>
   <div class="feed">
-    <app-feed-nav (indexChange)="onIndexChanged( $event )" [data]="feed"></app-feed-nav>
+    <!-- <app-feed-nav (indexChange)="onIndexChanged( $event )" [data]="feed"></app-feed-nav> -->
   </div>
 </div>
