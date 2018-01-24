@@ -1,4 +1,6 @@
-<nav class="nav">
+<nav class="nav"
+  [class.nav_black]="route === '/portfolio' || route === '/about'"
+ >
    <!-- (mouseenter)='openNav()' (mouseout)='closeNav()' -->
   <ul class="nav-ul">
     <li class="nav-li" >
