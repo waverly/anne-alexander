@@ -83,7 +83,7 @@ export class FeedComponent implements OnInit {
      imgCycle(){
        if(this.feed){
          console.log(this.feed.results.length, this.i);
-         if ( this.i < 1){
+         if ( this.i < this.feed.results.length){
            this.i++;
            console.log('in if', this.i);
          }
