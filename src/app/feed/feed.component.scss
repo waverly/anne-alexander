@@ -156,3 +156,9 @@ svg{
   right: auto;
   left:-5%;
 }
+
+@media (max-width: $break-phone-landscape) {
+  .background-image{
+    padding: 0;
+  }
+}

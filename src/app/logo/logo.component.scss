@@ -21,9 +21,10 @@
 
 @media (max-width: $break-phone-landscape) {
   .logo{
-    top: $margin-sides;
+    top: 10px;
     left: 0;
     width: 100vw;
+    height: 50px;
     text-align: center;
 
     h3{

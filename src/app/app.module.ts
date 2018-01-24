@@ -11,13 +11,9 @@ import { FeedDetailComponent } from './feed/feed-detail/feed-detail.component';
 import { FeedNavComponent } from './feed/feed-nav/feed-nav.component';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { NavComponent } from './nav/nav.component';
 import { SvgComponent } from './feed/svg/svg.component';
-import { notFoundComponent } from './notFound/notFound.component';
-import { ShareComponent } from './share/share.component';
 import { LogoComponent } from './logo/logo.component';
-import { LogotypeComponent } from './logo/logotype.component';
 import { GlobalService } from './shared/variables.service';
 import { EncodeURIPipe } from './shared/encodeURI.pipe';
 import { ResponsiveModule } from 'ng2-responsive';
@@ -32,16 +28,12 @@ import { FeaturedComponent } from './featured/featured.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactComponent,
     NavComponent,
     SvgComponent,
-    ShareComponent,
     LogoComponent,
-    LogotypeComponent,
     FeedComponent,
     FeedNavComponent,
     FeedDetailComponent,
-    notFoundComponent,
     EncodeURIPipe,
     UrlPipe,
     FeaturedComponent

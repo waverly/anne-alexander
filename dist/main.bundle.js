@@ -403,13 +403,9 @@ var feed_detail_component_1 = __webpack_require__("../../../../../src/app/feed/f
 var feed_nav_component_1 = __webpack_require__("../../../../../src/app/feed/feed-nav/feed-nav.component.ts");
 var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
 var about_component_1 = __webpack_require__("../../../../../src/app/about/about.component.ts");
-var contact_component_1 = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
 var nav_component_1 = __webpack_require__("../../../../../src/app/nav/nav.component.ts");
 var svg_component_1 = __webpack_require__("../../../../../src/app/feed/svg/svg.component.ts");
-var notFound_component_1 = __webpack_require__("../../../../../src/app/notFound/notFound.component.ts");
-var share_component_1 = __webpack_require__("../../../../../src/app/share/share.component.ts");
 var logo_component_1 = __webpack_require__("../../../../../src/app/logo/logo.component.ts");
-var logotype_component_1 = __webpack_require__("../../../../../src/app/logo/logotype.component.ts");
 var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
 var encodeURI_pipe_1 = __webpack_require__("../../../../../src/app/shared/encodeURI.pipe.ts");
 var ng2_responsive_1 = __webpack_require__("../../../../ng2-responsive/index.js");
@@ -423,16 +419,12 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 about_component_1.AboutComponent,
-                contact_component_1.ContactComponent,
                 nav_component_1.NavComponent,
                 svg_component_1.SvgComponent,
-                share_component_1.ShareComponent,
                 logo_component_1.LogoComponent,
-                logotype_component_1.LogotypeComponent,
                 feed_component_1.FeedComponent,
                 feed_nav_component_1.FeedNavComponent,
                 feed_detail_component_1.FeedDetailComponent,
-                notFound_component_1.notFoundComponent,
                 encodeURI_pipe_1.EncodeURIPipe,
                 url_pipe_1.UrlPipe,
                 featured_component_1.FeaturedComponent
@@ -460,70 +452,6 @@ var AppModule = /** @class */ (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/contact/contact.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"contact\">\n  <table>\n    <tr>\n      <td>\n        <div class=\"contact-content\">\n          <a class=\"a-hover\" href=\"mailto:info@alealimay.com\">info@alealimay.com</a>\n          <a class=\"a-hover\" href=\"https://www.instagram.com/alealimay/\" target=\"_blank\">instagram</a>\n          <a class=\"a-hover\" href=\"https://twitter.com/alealimay\" target=\"_blank\">twitter</a>\n          <a class=\"a-hover\" href=\"http://laleali.tumblr.com/\" target=\"_blank\">tumblr</a>\n        </div>\n      </td>\n    </tr>\n  </table>\n\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/contact/contact.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".contact {\n  width: 100vw;\n  height: 100vh; }\n\n.contact-content {\n  position: relative;\n  margin: auto;\n  width: 200px; }\n\n.contact-content a {\n    width: 100%;\n    display: block;\n    text-align: left;\n    clear: both; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/contact/contact.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
-var ContactComponent = /** @class */ (function () {
-    function ContactComponent(_globalService) {
-        this._globalService = _globalService;
-    }
-    ContactComponent.prototype.ngOnInit = function () {
-        this._globalService.setLoading(false);
-    };
-    ContactComponent = __decorate([
-        core_1.Component({
-            selector: 'app-contact',
-            template: __webpack_require__("../../../../../src/app/contact/contact.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/contact/contact.component.scss")]
-        }),
-        __metadata("design:paramtypes", [variables_service_1.GlobalService])
-    ], ContactComponent);
-    return ContactComponent;
-}());
-exports.ContactComponent = ContactComponent;
 
 
 /***/ }),
@@ -820,7 +748,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\nbutton {\n  position: fixed;\n  z-index: 1000; }\n\nsvg {\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.white {\n  background-color: red;\n  width: 100vw;\n  height: 100vh; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 3em; }\n\n.background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n\n.background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n\n.feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n\n.feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n\n.feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n\n.feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n\n.feed-ul .feed-li:first-child {\n      margin-top: 0; }\n\n.feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n\n.feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n\n.feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n\n.feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n\n.feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n\n.feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\nbutton {\n  position: fixed;\n  z-index: 1000; }\n\nsvg {\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.white {\n  background-color: red;\n  width: 100vw;\n  height: 100vh; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 3em; }\n\n.background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n\n.background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n\n.feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n\n.feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n\n.feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n\n.feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n\n.feed-ul .feed-li:first-child {\n      margin-top: 0; }\n\n.feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n\n.feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n\n.feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n\n.feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n\n.feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n\n.feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n\n@media (max-width: 767px) {\n  .background-image {\n    padding: 0; } }\n", ""]);
 
 // exports
 
@@ -1049,7 +977,7 @@ exports.SvgComponent = SvgComponent;
 /***/ "../../../../../src/app/logo/logo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"logo\" [@fadeInAnimation]>\n  <a [routerLink]=\"['/']\" class=\"nav-a\" [class.nav_active]=\"route === '/'\" >\n    <h3 class=\"logo\">Anne Alexander</h3>\n  </a>\n</div>\n"
+module.exports = "<div class=\"logo\" [@fadeInAnimation]>\n  <a [routerLink]=\"['/']\" class=\"nav-a\" >\n    <h3 class=\"logo\">Anne Alexander</h3>\n  </a>\n</div>\n"
 
 /***/ }),
 
@@ -1061,7 +989,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\n.logo {\n  position: fixed;\n  width: auto;\n  height: auto;\n  bottom: 25px;\n  left: 25px;\n  margin-left: 0;\n  margin-top: 0;\n  z-index: 15;\n  font-family: 'errata', sans-serif; }\n\n.logo h3 {\n    line-height: 20px; }\n\n@media (max-width: 767px) {\n  .logo {\n    top: 25px;\n    left: 0;\n    width: 100vw;\n    text-align: center; }\n    .logo h3 {\n      font-size: 25px; } }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\n.logo {\n  position: fixed;\n  width: auto;\n  height: auto;\n  bottom: 25px;\n  left: 25px;\n  margin-left: 0;\n  margin-top: 0;\n  z-index: 15;\n  font-family: 'errata', sans-serif; }\n\n.logo h3 {\n    line-height: 20px; }\n\n@media (max-width: 767px) {\n  .logo {\n    top: 10px;\n    left: 0;\n    width: 100vw;\n    height: 50px;\n    text-align: center; }\n    .logo h3 {\n      font-size: 25px; } }\n", ""]);
 
 // exports
 
@@ -1112,90 +1040,6 @@ exports.LogoComponent = LogoComponent;
 
 /***/ }),
 
-/***/ "../../../../../src/app/logo/logotype.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"logotype\" *ngIf=\"_globalService.pageLoading\">\n\n  <svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n  \t width=\"4000px\" height=\"1500px\" viewBox=\"0 0 4000 1500\" style=\"enable-background:new 0 0 4000 1500;\" xml:space=\"preserve\">\n  <g>\n  \t<rect y=\"467.747\" style=\"fill:none;\" width=\"4000\" height=\"564.506\"/>\n  \t<path d=\"M663.843,993.78c-34.706,0-54.884-19.824-60.534-46.728c-10.493,30.443-50.848,46.728-93.625,46.728\n  \t\tc-54.077,0-107.346-17.699-107.346-73.631c0-74.34,71.833-87.084,103.311-89.916c44.391-3.539,94.432-6.371,94.432-21.239v-53.808\n  \t\tc0-56.639-33.092-70.799-62.147-70.799c-21.792,0-35.513,9.203-35.513,30.443c0,12.035,5.65,15.576,5.65,26.195\n  \t\tc0,12.036-9.686,24.072-33.899,24.072c-23.406,0-32.285-15.576-32.285-30.443c0-24.072,33.092-54.516,96.047-54.516\n  \t\tc82.325,0,126.717,39.647,126.717,128.146v150.803c0,16.283,8.878,23.363,20.985,23.363c13.721,0,25.021-10.619,28.249-17.699\n  \t\tc0-1.416,4.036,0.707,3.229,2.123C713.077,979.62,693.707,993.78,663.843,993.78z M600.081,819.614\n  \t\tc-18.563,10.619-55.691,10.619-79.097,14.16c-27.442,4.955-55.691,21.239-55.691,86.375c0,57.347,31.478,67.259,58.919,67.259\n  \t\tc39.549,0,75.869-25.487,75.869-53.1V819.614z\"/>\n  \t<path d=\"M755.848,988.116c-2.421,0-2.421-4.248,0-4.248h44.392c3.229,0,5.649-0.708,5.649-2.832V474.822\n  \t\tc0-2.124-2.421-2.832-5.649-2.832h-44.392c-2.421,0-2.421-4.248,0-4.248h112.189c1.614,0,1.614,0.708,1.614,2.124v511.17\n  \t\tc0,2.124,1.614,2.832,5.65,2.832h44.391c1.614,0,1.614,4.248,0,4.248H755.848z\"/>\n  \t<path d=\"M1277.24,820.321h-233.256c-0.807,5.664-0.807,11.328-0.807,17.701c0,83.543,8.878,116.109,34.706,136.643\n  \t\tc16.949,12.035,38.741,16.283,59.726,16.283c57.305,0,101.697-26.904,129.945-65.844c0.807-0.707,4.036,0.709,3.229,2.125\n  \t\tc-29.863,40.355-76.676,67.259-133.174,67.259c-92.818,0-162.229-70.091-162.229-156.466c0-87.084,69.412-157.883,162.229-157.883\n  \t\tc100.889,0,142.052,85.667,142.052,138.059C1279.662,819.614,1278.854,820.321,1277.24,820.321z M1186.037,700.671\n  \t\tc-13.721-12.744-30.67-16.283-48.427-16.283c-20.985,0-42.777,3.539-59.726,16.283c-23.406,18.408-32.285,54.516-33.899,115.403\n  \t\th170.301C1212.671,755.187,1206.214,719.079,1186.037,700.671z\"/>\n  \t<path d=\"M1615.421,993.78c-34.706,0-54.884-19.824-60.534-46.728c-10.493,30.443-50.848,46.728-93.625,46.728\n  \t\tc-54.077,0-107.346-17.699-107.346-73.631c0-74.34,71.833-87.084,103.311-89.916c44.391-3.539,94.432-6.371,94.432-21.239v-53.808\n  \t\tc0-56.639-33.092-70.799-62.147-70.799c-21.792,0-35.513,9.203-35.513,30.443c0,12.035,5.65,15.576,5.65,26.195\n  \t\tc0,12.036-9.686,24.072-33.899,24.072c-23.406,0-32.285-15.576-32.285-30.443c0-24.072,33.092-54.516,96.047-54.516\n  \t\tc82.325,0,126.717,39.647,126.717,128.146v150.803c0,16.283,8.878,23.363,20.985,23.363c13.721,0,25.021-10.619,28.249-17.699\n  \t\tc0-1.416,4.036,0.707,3.229,2.123C1664.655,979.62,1645.284,993.78,1615.421,993.78z M1551.659,819.614\n  \t\tc-18.563,10.619-55.691,10.619-79.097,14.16c-27.442,4.955-55.691,21.239-55.691,86.375c0,57.347,31.478,67.259,58.919,67.259\n  \t\tc39.549,0,75.869-25.487,75.869-53.1V819.614z\"/>\n  \t<path d=\"M1707.425,988.116c-2.421,0-2.421-4.248,0-4.248h44.392c3.229,0,5.649-0.708,5.649-2.832V474.822\n  \t\tc0-2.124-2.421-2.832-5.649-2.832h-44.392c-2.421,0-2.421-4.248,0-4.248h112.189c1.614,0,1.614,0.708,1.614,2.124v511.17\n  \t\tc0,2.124,1.614,2.832,5.65,2.832h44.391c1.614,0,1.614,4.248,0,4.248H1707.425z\"/>\n  \t<path d=\"M1918.886,988.116c-1.614,0-1.614-4.248,0-4.248h44.392c3.229,0,4.843-0.708,4.843-2.832V693.591\n  \t\tc0-2.123-1.614-2.832-4.843-2.832h-44.392c-1.614,0-1.614-4.248,0-4.248h112.188c1.614,0,1.614,0.709,1.614,2.125v292.4\n  \t\tc0,2.124,1.614,2.832,5.65,2.832h44.391c1.614,0,1.614,4.248,0,4.248H1918.886z M1999.597,543.497\n  \t\tc-23.406,0-41.97-16.992-41.97-37.524c0-21.24,18.563-38.231,41.97-38.231c24.213,0,43.584,16.992,43.584,38.231\n  \t\tC2043.182,526.505,2023.811,543.497,1999.597,543.497z\"/>\n  \t<path d=\"M2736.483,988.116c-2.422,0-2.422-4.248,0-4.248h43.584c4.035,0,5.649-0.708,5.649-2.832V756.603\n  \t\tc0-50.268-40.355-72.215-68.604-72.215c-58.92,0-91.204,38.939-91.204,67.259v229.39c0,2.124,0.808,2.832,4.843,2.832h44.392\n  \t\tc2.421,0,2.421,4.248,0,4.248h-163.845c-1.614,0-1.614-4.248,0-4.248h44.392c3.229,0,4.843-0.708,4.843-2.832V756.603\n  \t\tc0-50.268-40.355-72.215-67.798-72.215c-51.655,0-79.097,26.195-91.204,60.887v235.762c0,2.124,1.614,2.832,4.843,2.832h44.392\n  \t\tc1.614,0,1.614,4.248,0,4.248h-163.037c-2.421,0-2.421-4.248,0-4.248h43.584c4.036,0,5.65-0.708,5.65-2.832V692.884\n  \t\tc0-1.416-1.614-2.125-5.65-2.125h-43.584c-2.421,0-2.421-4.248,0-4.248h111.382c1.614,0,2.421,0.709,2.421,2.125v46.727\n  \t\tc14.528-40.355,54.884-55.223,91.204-55.223c73.447,0,114.61,22.656,129.945,60.18c11.3-41.064,58.112-60.18,94.433-60.18\n  \t\tc82.325,0,133.174,27.611,133.174,103.367v197.529c0,2.124,1.614,2.832,4.843,2.832h44.391c1.614,0,1.614,4.248,0,4.248H2736.483z\"\n  \t\t/>\n  \t<path d=\"M3215.903,993.78c-34.706,0-54.884-19.824-60.533-46.728c-10.493,30.443-50.849,46.728-93.626,46.728\n  \t\tc-54.076,0-107.346-17.699-107.346-73.631c0-74.34,71.833-87.084,103.311-89.916c44.392-3.539,94.433-6.371,94.433-21.239v-53.808\n  \t\tc0-56.639-33.092-70.799-62.148-70.799c-21.792,0-35.513,9.203-35.513,30.443c0,12.035,5.649,15.576,5.649,26.195\n  \t\tc0,12.036-9.685,24.072-33.898,24.072c-23.406,0-32.284-15.576-32.284-30.443c0-24.072,33.091-54.516,96.046-54.516\n  \t\tc82.326,0,126.717,39.647,126.717,128.146v150.803c0,16.283,8.879,23.363,20.985,23.363c13.721,0,25.021-10.619,28.249-17.699\n  \t\tc0-1.416,4.035,0.707,3.229,2.123C3265.137,979.62,3245.767,993.78,3215.903,993.78z M3152.142,819.614\n  \t\tc-18.564,10.619-55.691,10.619-79.098,14.16c-27.441,4.955-55.69,21.239-55.69,86.375c0,57.347,31.478,67.259,58.919,67.259\n  \t\tc39.549,0,75.869-25.487,75.869-53.1V819.614z\"/>\n  \t<path d=\"M3608.96,690.759c-5.649,0-8.07,2.832-19.37,29.736l-182.408,435.416c-17.756,42.479-34.706,57.347-66.99,57.347\n  \t\ts-57.305-14.868-57.305-40.355c0-22.655,16.949-38.939,37.127-38.939c20.985,0,32.284,11.327,32.284,24.779\n  \t\tc0,16.284-15.335,20.532-15.335,34.692c0,7.08,10.492,9.203,23.406,9.203c10.492,0,25.828-8.496,41.163-45.311l68.604-161.423\n  \t\tl-158.194-302.313c-0.807-2.123-2.421-2.832-6.457-2.832h-37.935c-2.421,0-2.421-4.248,0-4.248h159.809\n  \t\tc1.614,0,1.614,4.248,0,4.248h-42.776c-4.036,0-4.843,0.709-4.036,2.832l116.225,234.346l87.976-207.441\n  \t\tc11.3-27.611,10.492-29.736,5.649-29.736h-43.584c-1.614,0-1.614-4.248,0-4.248h105.731c1.615,0,1.615,4.248,0,4.248H3608.96z\"/>\n  </g>\n  <g>\n  </g>\n  <g>\n  </g>\n  <g>\n  </g>\n  <g>\n  </g>\n  <g>\n  </g>\n  <g>\n  </g>\n  </svg>\n\n\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo/logotype.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\n.logotype {\n  position: fixed;\n  width: 150px;\n  height: 60px;\n  top: 50%;\n  left: 50%;\n  margin-left: -75px;\n  margin-top: -30px;\n  z-index: 15; }\n\n.logotype svg {\n    display: block;\n    width: 100%;\n    height: 100%;\n    display: block; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/logo/logotype.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
-var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
-var LogotypeComponent = /** @class */ (function () {
-    function LogotypeComponent(_globalService) {
-        this._globalService = _globalService;
-    }
-    LogotypeComponent.prototype.ngOnInit = function () {
-    };
-    LogotypeComponent = __decorate([
-        core_1.Component({
-            selector: 'app-logotype',
-            template: __webpack_require__("../../../../../src/app/logo/logotype.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/logo/logotype.component.scss")],
-            animations: [
-                animations_1.trigger('navLiState', [
-                    animations_1.state('0', animations_1.style({
-                        height: '0px',
-                        position: 'absolute'
-                    })),
-                    animations_1.state('1', animations_1.style({
-                        height: '50px',
-                        position: 'relative'
-                    })),
-                    animations_1.transition('0 => 1', animations_1.animate('500ms ease-in')),
-                    animations_1.transition('1 => 0', animations_1.animate('500ms ease-out'))
-                ]),
-                animations_1.trigger('navUlState', [
-                    animations_1.state('0', animations_1.style({})),
-                    animations_1.state('1', animations_1.style({})),
-                    animations_1.transition('0 => 1', animations_1.animate('500ms ease-in')),
-                    animations_1.transition('1 => 0', animations_1.animate('500ms ease-out'))
-                ])
-            ]
-        }),
-        __metadata("design:paramtypes", [variables_service_1.GlobalService])
-    ], LogotypeComponent);
-    return LogotypeComponent;
-}());
-exports.LogotypeComponent = LogotypeComponent;
-
-
-/***/ }),
-
 /***/ "../../../../../src/app/nav/nav.component.html":
 /***/ (function(module, exports) {
 
@@ -1211,7 +1055,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  bottom: 25px;\n  right: 25px;\n  width: 300px;\n  text-align: right;\n  z-index: 15; }\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n.nav-ul .nav-li {\n    width: auto;\n    margin-left: 25px;\n    position: relative;\n    display: inline-block; }\n.nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease;\n      font-size: 14px;\n      color: #FF3700;\n      line-height: 20px; }\n.nav-ul .nav-li a:hover {\n        color: #00C8FF; }\n.nav-ul .nav-li a.nav_active {\n        color: #00C8FF; }\n.nav-ul.open .nav-li {\n  position: relative; }\n@media (max-width: 767px) {\n  .nav {\n    position: fixed;\n    top: auto;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-align: center;\n    width: 100vw;\n    z-index: 15;\n    background-color: black;\n    height: 60px;\n    padding-top: 20px; }\n  .nav-ul {\n    text-align: center;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-start: 0px;\n    -webkit-padding-start: 0px; }\n    .nav-ul .nav-li {\n      margin-left: 25px;\n      margin-right: 25px; }\n      .nav-ul .nav-li a {\n        font-size: 18px; } }\n", ""]);
+exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  bottom: 25px;\n  right: 25px;\n  width: 300px;\n  text-align: right;\n  z-index: 15; }\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n.nav-ul .nav-li {\n    width: auto;\n    margin-left: 25px;\n    position: relative;\n    display: inline-block; }\n.nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease;\n      font-size: 14px;\n      color: #FF3700;\n      line-height: 20px; }\n.nav-ul .nav-li a:hover {\n        color: #00C8FF; }\n.nav-ul .nav-li a.nav_active {\n        color: #00C8FF; }\n.nav-ul.open .nav-li {\n  position: relative; }\n@media (max-width: 767px) {\n  .nav {\n    position: fixed;\n    top: auto;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-align: center;\n    width: 100vw;\n    z-index: 15;\n    height: 60px;\n    padding-top: 20px; }\n  .nav-ul {\n    text-align: center;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-start: 0px;\n    -webkit-padding-start: 0px; }\n    .nav-ul .nav-li {\n      margin-left: 25px;\n      margin-right: 25px; }\n      .nav-ul .nav-li a {\n        font-size: 18px; } }\n", ""]);
 
 // exports
 
@@ -1335,151 +1179,6 @@ var NavComponent = /** @class */ (function () {
     return NavComponent;
 }());
 exports.NavComponent = NavComponent;
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/notFound/notFound.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h1>page not found</h1>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/notFound/notFound.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/notFound/notFound.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-// import {IFeed}from '../feed';
-var notFoundComponent = /** @class */ (function () {
-    function notFoundComponent() {
-    }
-    notFoundComponent.prototype.ngOnInit = function () {
-    };
-    notFoundComponent = __decorate([
-        core_1.Component({
-            selector: 'not-found',
-            template: __webpack_require__("../../../../../src/app/notFound/notFound.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/notFound/notFound.component.scss")]
-        })
-    ], notFoundComponent);
-    return notFoundComponent;
-}());
-exports.notFoundComponent = notFoundComponent;
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/share/share.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"share\">\n  <h2 class=\"share-button\" (click)=\"openShare()\" [class.blacked_text]=\"_globalService.isStyling\">share</h2>\n\n  <ul [class.share_open]=\"isShare\" [@shareState]=\"isShare\" class=\"share-ul\">\n    <li class=\"share-li\" (click)=\"openShare()\">\n      <a [attr.href]=\"'https://twitter.com/intent/tweet?url='+encodedRoute\" target=\"_blank\" [class.blacked_text]=\"_globalService.isStyling\">tw</a>\n    </li>\n    <li class=\"share-li\" (click)=\"openShare()\">\n      <a [attr.href]=\"'http://www.tumblr.com/share/link?url='+encodedRoute\" target=\"_blank\" [class.blacked_text]=\"_globalService.isStyling\">tm</a>\n    </li>\n    <li class=\"share-li\" (click)=\"openShare()\">\n      <a [attr.href]=\"'https://www.facebook.com/sharer/sharer.php?u='+encodedRoute\" target=\"_blank\" [class.blacked_text]=\"_globalService.isStyling\">fb</a>\n    </li>\n  </ul>\n\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/share/share.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.share {\n  position: fixed;\n  top: 25px;\n  left: 25px;\n  z-index: 15;\n  width: 200px; }\n.share-button {\n  cursor: pointer; }\n.share-ul {\n  position: absolute;\n  left: -200px; }\n.share-ul .share-li {\n    display: inline-block; }\n.share-ul .share-li a {\n      font-size: 36px;\n      line-height: 36px;\n      font-family: \"avus\";\n      letter-spacing: 0px;\n      /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/ }\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n        .share-ul .share-li a {\n          font-size: 30px;\n          line-height: 36px; } }\n.share-ul.share_open {\n  left: 0; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/share/share.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("../../../core/esm5/core.js");
-var common_1 = __webpack_require__("../../../common/esm5/common.js");
-var router_1 = __webpack_require__("../../../router/esm5/router.js");
-var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
-// import { EncodeURIPipe } from './../shared/encodeURI.pipe';
-var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
-var ShareComponent = /** @class */ (function () {
-    function ShareComponent(location, router, _globalService) {
-        var _this = this;
-        this._globalService = _globalService;
-        router.events.subscribe(function (val) {
-            _this.encodedRoute = encodeURI('http://alealimay.com' + location.path());
-        });
-    }
-    ShareComponent.prototype.ngOnInit = function () {
-        this.isShare = false;
-    };
-    ShareComponent.prototype.openShare = function () {
-        this.isShare = !this.isShare;
-    };
-    ShareComponent = __decorate([
-        core_1.Component({
-            selector: 'app-share',
-            template: __webpack_require__("../../../../../src/app/share/share.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/share/share.component.scss")],
-            animations: [
-                animations_1.trigger('shareState', [
-                    animations_1.state('0', animations_1.style({
-                        left: '-200px'
-                    })),
-                    animations_1.state('1', animations_1.style({
-                        left: '0px'
-                    })),
-                    animations_1.transition('0 => 1', animations_1.animate('500ms ease-in')),
-                    animations_1.transition('1 => 0', animations_1.animate('500ms ease-out'))
-                ])
-            ]
-        }),
-        __metadata("design:paramtypes", [common_1.Location, router_1.Router, variables_service_1.GlobalService])
-    ], ShareComponent);
-    return ShareComponent;
-}());
-exports.ShareComponent = ShareComponent;
 
 
 /***/ }),
