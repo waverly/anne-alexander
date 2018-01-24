@@ -1043,7 +1043,7 @@ exports.LogoComponent = LogoComponent;
 /***/ "../../../../../src/app/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"nav\"\n  [class.nav_black]=\"route === '/portfolio' || route === '/about'\"\n >\n   <!-- (mouseenter)='openNav()' (mouseout)='closeNav()' -->\n  <ul class=\"nav-ul\">\n    <li class=\"nav-li\" >\n      <a [routerLink]=\"['/portfolio']\" class=\"nav-a\" [class.nav_active]=\"route === '/portfolio'\" >Featured Work</a>\n    </li>\n    <li class=\"nav-li\" >\n      <a [routerLink]=\"['/about']\" class=\"nav-a\" [class.nav_active]=\"route === '/about'\" >?</a>\n    </li>\n\n  </ul>\n</nav>\n"
+module.exports = "<nav class=\"nav\"\n  [class.nav_black]=\"route === '/portfolio' || route === '/about'\"\n >\n   <!-- (mouseenter)='openNav()' (mouseout)='closeNav()' -->\n  <ul class=\"nav-ul\">\n    <li class=\"nav-li\" >\n      <a [routerLink]=\"['/portfolio']\" class=\"nav-a\" [class.nav_active]=\"route === '/portfolio'\" >featured work</a>\n    </li>\n    <li class=\"nav-li\" >\n      <a [routerLink]=\"['/about']\" class=\"nav-a\" [class.nav_active]=\"route === '/about'\" >?</a>\n    </li>\n\n  </ul>\n</nav>\n"
 
 /***/ }),
 
