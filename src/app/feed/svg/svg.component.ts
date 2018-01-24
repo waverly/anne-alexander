@@ -49,8 +49,8 @@ export class SvgComponent implements OnInit {
     var h = (Math.max(document.documentElement.clientHeight, window.innerHeight || 0))+5;
 
     svgCanvas.attr({
-      width: '100vw',
-      height: '100vh',
+      width: '100%',
+      height: '100%',
       viewBox:"0, 0, 1440, 1020",
       preserveAspectRatio: 'none'
     });
