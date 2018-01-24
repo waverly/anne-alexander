@@ -49,12 +49,12 @@
 }
 
 @media (max-width: $break-phone-landscape) {
-  .text-wrap[_ngcontent-c4] {
-      width: 100vw;
+  .text-wrap{
+      width: 100vw!important;
       padding: $margin-sides;
   }
 
-  .about-block[_ngcontent-c4] {
+  .about-block {
     &:first-of-type{
       margin-top: 7em;
     }
