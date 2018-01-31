@@ -67,7 +67,8 @@ export class FeedComponent implements OnInit {
          feed=>{
            if(page==0){
              this.feed=feed;
-             setInterval( ()=>{this.imgCycle();}, 4000)
+
+             setInterval( ()=>{this.imgCycle();}, 6000)
 
            }else{
              console.log('in else block');
@@ -83,13 +84,14 @@ export class FeedComponent implements OnInit {
      imgCycle(){
        if(this.feed){
          console.log(this.feed.results.length, this.i);
-         if ( this.i < this.feed.results.length){
+         if ( this.i < this.feed.results.length - 1){
+           
            this.i++;
-           console.log('in if', this.i);
+           // console.log('in if', this.i);
          }
          else{
            this.i = 0;
-           console.log('in else',  this.i);
+           // console.log('in else',  this.i);
          }
 
        }

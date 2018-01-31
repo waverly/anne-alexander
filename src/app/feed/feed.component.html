@@ -4,7 +4,7 @@
     <img
       *ngIf="feed.results"
       alt=""
-      [src]="feed.results[i].data['featured-img']['featured-img'].value.main.url"
+      [src]="feed.results[i]?.data['featured-img']['featured-img']?.value.main.url"
       >
   </div>
   <div class="feed">

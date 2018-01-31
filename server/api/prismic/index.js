@@ -29,7 +29,7 @@ exports.getAll = function (req, res) {
   initApi(req).then(function(api){
     api.query(
         Prismic.Predicates.at('document.type', type),
-        { orderings : '[my.'+type+'.date desc]', pageSize : 5, page : page }
+        { orderings : '[my.'+type+'.date desc]', pageSize : 20, page : page }
     ).then(function(response) {
       res.status(200).json(response);
         // response is the response object, response.results holds the documents
