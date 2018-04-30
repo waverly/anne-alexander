@@ -6,7 +6,7 @@
     <div class="about-block">
       <h3>background</h3>
       <div class="about-text">
-        <p>{{feed.results["0"].data.information.background.value["0"].text}}</p>
+        <p [innerHtml]="filteredText | UrlPipe"></p>
       </div>
     </div>
 
@@ -32,6 +32,9 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="about-block">
+      <p>copyright aa+ llc 2018</p>
     </div>
 
   </div>

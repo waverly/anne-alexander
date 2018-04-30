@@ -1,61 +1,54 @@
-@import 'fonts';
-@import 'variables';
-@import 'mixins';
+@import "fonts";
+@import "variables";
+@import "mixins";
 
-.about{
+.about {
   position: relative;
   width: 100vw;
   height: auto;
 
-  h3{
+  h3 {
     padding-bottom: 1rem;
   }
 }
 
-.text-wrap{
+.text-wrap {
   position: relative;
   width: 500px;
   margin: auto;
 }
 
-.about-block{
+.about-block {
   margin: 5rem 0rem;
 }
 
-.about-text{
-  p{
-    @include p();
-    margin-top: $margin-top-p;
-    &:nth-child(1){
-      margin-top: 0;
-    }
-  }
+.about-text {
 }
 
-.column-wrap{
+.column-wrap {
   columns: 2;
 }
 
-.normal{
+.normal {
   background-color: blue;
 }
 
-.about-list{
-  li{
-    a{
+.about-list {
+  li {
+    a {
       font-size: inherit;
     }
   }
 }
 
 @media (max-width: $break-phone-landscape) {
-  .text-wrap{
-      width: 100vw!important;
-      padding: $margin-sides;
+  .text-wrap {
+    width: 100vw !important;
+    padding: $margin-sides;
   }
 
   .about-block {
-    &:first-of-type{
+    &:first-of-type {
       margin-top: 7em;
     }
     margin: 0rem 0rem;

@@ -198,7 +198,7 @@ animations_1.trigger('slideInOutAnimation', [
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<div class=\"about\" *ngIf=\"feed\">\n  <div class=\"text-wrap\">\n\n    <div class=\"about-block\">\n      <h3>background</h3>\n      <div class=\"about-text\">\n        <p>{{feed.results[\"0\"].data.information.background.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[\"0\"][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul [ngClass]=\"columnWrap()\">\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value['0'].repeat\">\n            {{ item[\"client-name\"].value[\"0\"].text }}\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[1][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul>\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value[1].repeat\">\n            <a [href]=\"item['contact-item'].value['0'].spans['0'].data.value.url\">\n              {{ item[\"contact-item\"].value[\"0\"].text }}\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "\n\n<div class=\"about\" *ngIf=\"feed\">\n  <div class=\"text-wrap\">\n\n    <div class=\"about-block\">\n      <h3>background</h3>\n      <div class=\"about-text\">\n        <p [innerHtml]=\"filteredText | UrlPipe\"></p>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[\"0\"][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul [ngClass]=\"columnWrap()\">\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value['0'].repeat\">\n            {{ item[\"client-name\"].value[\"0\"].text }}\n          </li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"about-block\">\n      <h3>{{feed.results[\"0\"].data.information.body.value[1][\"non-repeat\"][\"section-title\"].value[\"0\"].text}}</h3>\n      <div class=\"about-list\">\n        <ul>\n          <li *ngFor=\"let item of feed.results['0'].data.information.body.value[1].repeat\">\n            <a [href]=\"item['contact-item'].value['0'].spans['0'].data.value.url\">\n              {{ item[\"contact-item\"].value[\"0\"].text }}\n            </a>\n          </li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"about-block\">\n      <p>copyright aa+ llc 2018</p>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -210,7 +210,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\n.about {\n  position: relative;\n  width: 100vw;\n  height: auto; }\n\n.about h3 {\n    padding-bottom: 1rem; }\n\n.text-wrap {\n  position: relative;\n  width: 500px;\n  margin: auto; }\n\n.about-block {\n  margin: 5rem 0rem; }\n\n.about-text p {\n  font-size: 14px;\n  line-height: 19px;\n  font-family: helvetica;\n  letter-spacing: 1px;\n  /*  @if $media == large-desktop {\n    @media only screen and (min-width: $break-large-desktop + 1) and (max-width: $break-infinite) { @content; }\n  }*/\n  margin-top: 20px; }\n\n@media only screen and (min-width: 0px) and (max-width: 767px) {\n    .about-text p {\n      font-size: 12px;\n      line-height: 17px; } }\n\n.about-text p:nth-child(1) {\n    margin-top: 0; }\n\n.column-wrap {\n  -webkit-columns: 2;\n          columns: 2; }\n\n.normal {\n  background-color: blue; }\n\n.about-list li a {\n  font-size: inherit; }\n\n@media (max-width: 767px) {\n  .text-wrap {\n    width: 100vw !important;\n    padding: 25px; }\n  .about-block {\n    margin: 0rem 0rem;\n    margin-top: 3rem; }\n    .about-block:first-of-type {\n      margin-top: 7em; } }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\n.about {\n  position: relative;\n  width: 100vw;\n  height: auto; }\n\n.about h3 {\n    padding-bottom: 1rem; }\n\n.text-wrap {\n  position: relative;\n  width: 500px;\n  margin: auto; }\n\n.about-block {\n  margin: 5rem 0rem; }\n\n.column-wrap {\n  -webkit-columns: 2;\n          columns: 2; }\n\n.normal {\n  background-color: blue; }\n\n.about-list li a {\n  font-size: inherit; }\n\n@media (max-width: 767px) {\n  .text-wrap {\n    width: 100vw !important;\n    padding: 25px; }\n  .about-block {\n    margin: 0rem 0rem;\n    margin-top: 3rem; }\n    .about-block:first-of-type {\n      margin-top: 7em; } }\n", ""]);
 
 // exports
 
@@ -239,48 +239,79 @@ var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var prismic_service_1 = __webpack_require__("../../../../../src/app/shared/prismic.service.ts");
 var variables_service_1 = __webpack_require__("../../../../../src/app/shared/variables.service.ts");
 var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 var AboutComponent = /** @class */ (function () {
-    function AboutComponent(_route, _router, _feedService, _globalService) {
+    function AboutComponent(_route, _router, _feedService, _globalService, sanitizer) {
         this._route = _route;
         this._router = _router;
         this._feedService = _feedService;
         this._globalService = _globalService;
+        this.sanitizer = sanitizer;
         this.innerHeight = window.innerHeight;
-        this.pageTitle = 'Product List';
+        this.pageTitle = "Product List";
         this.paginationInProcess = false;
+        var sanitized = sanitizer.bypassSecurityTrustUrl(this.returnText);
+        console.log(sanitized);
     }
     AboutComponent.prototype.ngOnInit = function () {
         this._globalService.setLoading(true);
-        console.log('ng on init');
+        console.log("ng on init");
         if (!this.feed) {
             this.getPage(0);
         }
     };
+    AboutComponent.prototype.parseHref = function (text) {
+        // for each span that is listed as a link
+        var spans = text.value["0"].spans;
+        var returnText = text.value["0"].text;
+        console.log(spans);
+        if (spans.length > 0) {
+            var counter_1 = 0;
+            spans.forEach(function (i) {
+                var firstInsert = "<a target='_blank' style='color: #00c8ff' href=" +
+                    i.data.value.url +
+                    ">";
+                var firstInsertLength = firstInsert.length;
+                var first = i.start + counter_1;
+                var secondInsert = "</a>";
+                var secondInsertLength = secondInsert.length;
+                var last = i.end + 1 + counter_1;
+                var arr = returnText.split("");
+                arr.splice(first, 0, firstInsert);
+                arr.splice(last, 0, secondInsert);
+                returnText = arr.join("");
+                counter_1 += firstInsertLength + secondInsertLength;
+            });
+        }
+        return returnText;
+    };
     AboutComponent.prototype.getPage = function (page) {
         var _this = this;
-        this._feedService.getFeed('information', page)
-            .subscribe(function (feed) {
+        this._feedService.getFeed("information", page).subscribe(function (feed) {
             if (page == 0) {
                 _this.feed = feed;
-                console.log('in feed');
+                console.log("in feed");
                 console.log(_this.feed);
+                _this.filteredText = _this.parseHref(feed.results["0"].data.information.background);
+                console.log(_this.filteredText);
+                //
                 _this._globalService.setLoading(false);
             }
             else {
-                console.log('in else block');
+                console.log("in else block");
             }
         }, function (error) {
-            console.log('there was an error');
+            console.log("there was an error");
             _this.errorMessage = error;
             _this._globalService.setLoading(false);
         });
     };
     AboutComponent.prototype.columnWrap = function () {
         if (this.feed.results["0"].data.information.body.value["0"].repeat.length > 5) {
-            return 'column-wrap';
+            return "column-wrap";
         }
         else {
-            return 'normal';
+            return "normal";
         }
     };
     AboutComponent = __decorate([
@@ -291,7 +322,8 @@ var AboutComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [router_1.ActivatedRoute,
             router_1.Router,
             prismic_service_1.PrismicService,
-            variables_service_1.GlobalService])
+            variables_service_1.GlobalService,
+            platform_browser_1.DomSanitizer])
     ], AboutComponent);
     return AboutComponent;
 }());
@@ -635,7 +667,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.loaded {\n  color: green; }\n.wrap {\n  z-index: 15;\n  position: fixed; }\n.wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 50vh;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10; }\n.wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n.wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n.wrap a {\n    transition: all 0.5s ease;\n    -webkit-transition: all 0.5s ease;\n    -moz-transition: all 0.5s ease;\n    -ms-transition: all 0.5s ease;\n    -o-transition: all 0.5s ease; }\n.wrap a:hover h3 {\n      color: #00C8FF; }\n.wrap a:active {\n      color: #00C8FF; }\n.wrap .active {\n    color: #00C8FF; }\n.wrap .project-title {\n    -webkit-transition: all 1s ease;\n    transition: all 1s ease; }\n", ""]);
+exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n.loaded {\n  color: green; }\n.wrap {\n  z-index: 15;\n  position: fixed; }\n.wrap .project-title {\n    -webkit-transform: rotate(-90deg);\n            transform: rotate(-90deg);\n    -webkit-transform-origin: right;\n            transform-origin: right;\n    top: 0;\n    height: 50px;\n    width: 50vh;\n    line-height: 50px;\n    text-align: right;\n    right: 30px;\n    padding: 0 1em;\n    position: fixed;\n    z-index: 10; }\n.wrap .feed-nav {\n    -webkit-transform: rotate(270deg);\n    transform: rotate(270deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    top: -65px;\n    bottom: 0;\n    height: 50px;\n    line-height: 50px;\n    right: 0;\n    position: fixed;\n    width: 100vh;\n    text-align: left; }\n.wrap .feed-nav li {\n      display: inline-block;\n      margin: 0 1rem; }\n.wrap a {\n    transition: all 0.5s ease;\n    -webkit-transition: all 0.5s ease;\n    -moz-transition: all 0.5s ease;\n    -ms-transition: all 0.5s ease;\n    -o-transition: all 0.5s ease; }\n.wrap a:hover h3 {\n      color: #00c8ff; }\n.wrap a:active {\n      color: #00c8ff; }\n.wrap .active {\n    color: #00c8ff; }\n.wrap .project-title {\n    -webkit-transition: all 1s ease;\n    transition: all 1s ease; }\n", ""]);
 
 // exports
 
@@ -748,7 +780,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\nbutton {\n  position: fixed;\n  z-index: 1000; }\n\nsvg {\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.white {\n  background-color: red;\n  width: 100vw;\n  height: 100vh; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 0; }\n\n.background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n\n.background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #FF3700; }\n\n.feed p {\n    color: #FF3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n\n.feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n\n.feed-nav li h3 {\n      font-size: 25px;\n      color: #FF3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n\n.feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n\n.feed-ul .feed-li:first-child {\n      margin-top: 0; }\n\n.feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n\n.feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n\n.feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n\n.feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n\n.feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n\n.feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n\n@media (max-width: 767px) {\n  .background-image {\n    padding: 0; } }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: avus;\n  src: url(\"/assets/fonts/AvusPro.ttf\") format(\"truetype\"); }\n\n@font-face {\n  font-family: errata;\n  src: url(\"/assets/fonts/errata.otf\") format(\"opentype\"); }\n\n/*....................................SCSS VARIABLES..................................*/\n\n/*....................................................................................*/\n\n/*.................................................................................*/\n\n/*$break-large-desktop: 2500px;*/\n\n/*$break-infinite: 500000px;*/\n\n/*....................................SCSS MIXINS..................................*/\n\nbutton {\n  position: fixed;\n  z-index: 1000; }\n\nsvg {\n  z-index: 1000;\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0; }\n\n.white {\n  background-color: red;\n  width: 100vw;\n  height: 100vh; }\n\n.background-image {\n  width: 100vw;\n  z-index: 7;\n  position: fixed;\n  height: 100vh;\n  width: 100vw;\n  background-color: #272626;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 0; }\n\n.background-image h1 {\n    width: 100vw;\n    text-align: center;\n    position: fixed; }\n\n.background-image img {\n    display: block;\n    width: 100%;\n    height: 100%;\n    -o-object-fit: cover;\n       object-fit: cover; }\n\n.feed {\n  width: 100vw;\n  height: auto;\n  color: #ff3700; }\n\n.feed p {\n    color: #ff3700; }\n\n.feed-content {\n  width: 100vw; }\n\n.feed-nav {\n  -webkit-transform: rotate(270deg);\n  transform: rotate(270deg);\n  -webkit-transform-origin: 100% 100%;\n  transform-origin: 100% 100%;\n  top: -65px;\n  bottom: 0;\n  height: 50px;\n  line-height: 50px;\n  right: 0;\n  /* padding: 0 1em; */\n  position: fixed;\n  z-index: 7;\n  width: 100vh;\n  text-align: left; }\n\n.feed-nav li {\n    display: inline-block;\n    margin: 0 1rem; }\n\n.feed-nav li h3 {\n      font-size: 25px;\n      color: #ff3700; }\n\n.project-title {\n  -webkit-transform: rotate(-90deg);\n          transform: rotate(-90deg);\n  -webkit-transform-origin: right;\n          transform-origin: right;\n  top: 0;\n  height: 50px;\n  width: 200px;\n  line-height: 50px;\n  text-align: right;\n  right: 30px;\n  padding: 0 1em;\n  position: fixed;\n  z-index: 10;\n  font-size: 25px; }\n\n.feed-ul {\n  width: 100vw; }\n\n.feed-ul .feed-li {\n    z-index: 7;\n    position: relative;\n    margin-top: 0; }\n\n.feed-ul .feed-li:first-child {\n      margin-top: 0; }\n\n.feed-ul .feed-li:last-child {\n      margin-bottom: 0; }\n\n.feed-ul .feed-li a {\n      width: auto;\n      display: block;\n      position: relative; }\n\n.feed-ul .feed-li a:hover .title_left {\n        left: -10%; }\n\n.feed-ul .feed-li a:hover .title_right {\n        right: -10%; }\n\n.feed-ul .feed-li img {\n      display: block;\n      width: 100vw; }\n\n.feed-ul .feed-li h1 {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease; }\n\n.feed-title {\n  position: absolute;\n  top: 50%;\n  right: -1%; }\n\n.title_left {\n  right: auto;\n  left: -5%; }\n\n@media (max-width: 767px) {\n  .background-image {\n    padding: 0; } }\n", ""]);
 
 // exports
 
@@ -786,7 +818,7 @@ var FeedComponent = /** @class */ (function () {
         this._feedService = _feedService;
         this.document = document;
         this.innerHeight = window.innerHeight;
-        this.pageTitle = 'Product List';
+        this.pageTitle = "Product List";
         this.paginationInProcess = false;
         this.activeId = "2";
         this.i = 0;
@@ -795,14 +827,14 @@ var FeedComponent = /** @class */ (function () {
     }
     Object.defineProperty(FeedComponent.prototype, "stateName", {
         get: function () {
-            return this.show ? 'show' : 'hide';
+            return this.show ? "show" : "hide";
         },
         enumerable: true,
         configurable: true
     });
     FeedComponent.prototype.toggle = function () {
         this.show = !this.show;
-        alert('toggling');
+        alert("toggling");
     };
     FeedComponent.prototype.ngOnInit = function () {
         if (!this.feed) {
@@ -811,30 +843,28 @@ var FeedComponent = /** @class */ (function () {
     };
     FeedComponent.prototype.getPage = function (page) {
         var _this = this;
-        this._feedService.getFeed('featured-img', page)
-            .subscribe(function (feed) {
+        this._feedService.getFeed("featured-img", page).subscribe(function (feed) {
             if (page == 0) {
                 _this.feed = feed;
-                setInterval(function () { _this.imgCycle(); }, 6000);
+                setInterval(function () {
+                    _this.imgCycle();
+                }, 6000);
             }
             else {
-                console.log('in else block');
+                console.log("in else block");
             }
         }, function (error) {
-            console.log('there was an error');
+            console.log("there was an error");
             _this.errorMessage = error;
         });
     };
     FeedComponent.prototype.imgCycle = function () {
         if (this.feed) {
-            console.log(this.feed.results.length, this.i);
             if (this.i < this.feed.results.length - 1) {
                 this.i++;
-                // console.log('in if', this.i);
             }
             else {
                 this.i = 0;
-                // console.log('in else',  this.i);
             }
         }
     };
@@ -1087,7 +1117,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  bottom: 25px;\n  right: 25px;\n  width: 300px;\n  text-align: right;\n  z-index: 15; }\n.nav_black {\n  background-color: black; }\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n.nav-ul .nav-li {\n    width: auto;\n    margin-left: 25px;\n    position: relative;\n    display: inline-block; }\n.nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease;\n      font-size: 14px;\n      color: #FF3700;\n      line-height: 20px; }\n.nav-ul .nav-li a:hover {\n        color: #00C8FF; }\n.nav-ul .nav-li a.nav_active {\n        color: #00C8FF; }\n.nav-ul.open .nav-li {\n  position: relative; }\n@media (max-width: 767px) {\n  .nav {\n    position: fixed;\n    top: auto;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-align: center;\n    width: 100vw;\n    z-index: 15;\n    height: 50px;\n    padding-top: 10px; }\n  .nav-ul {\n    text-align: center;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-start: 0px;\n    -webkit-padding-start: 0px; }\n    .nav-ul .nav-li {\n      margin-left: 25px;\n      margin-right: 25px; }\n      .nav-ul .nav-li a {\n        font-size: 18px; } }\n", ""]);
+exports.push([module.i, "/*....................................SCSS VARIABLES..................................*/\n/*....................................................................................*/\n/*.................................................................................*/\n/*$break-large-desktop: 2500px;*/\n/*$break-infinite: 500000px;*/\n/*....................................SCSS MIXINS..................................*/\n.nav {\n  position: fixed;\n  bottom: 25px;\n  right: 25px;\n  width: 300px;\n  text-align: right;\n  z-index: 15; }\n.nav_black {\n  background-color: black; }\n.nav-ul {\n  width: 100%;\n  display: block;\n  height: auto;\n  position: relative; }\n.nav-ul .nav-li {\n    width: auto;\n    margin-left: 25px;\n    position: relative;\n    display: inline-block; }\n.nav-ul .nav-li a {\n      width: 100%;\n      display: block;\n      height: 100%;\n      line-height: auto;\n      vertical-align: middle;\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      -moz-transition: all 0.5s ease;\n      -ms-transition: all 0.5s ease;\n      -o-transition: all 0.5s ease;\n      font-size: 14px;\n      color: #ff3700;\n      line-height: 20px; }\n.nav-ul .nav-li a:hover {\n        color: #00c8ff; }\n.nav-ul .nav-li a.nav_active {\n        color: #00c8ff; }\n.nav-ul.open .nav-li {\n  position: relative; }\n@media (max-width: 767px) {\n  .nav {\n    position: fixed;\n    top: auto;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    text-align: center;\n    width: 100vw;\n    z-index: 15;\n    height: 50px;\n    padding-top: 10px; }\n  .nav-ul {\n    text-align: center;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    padding-start: 0px;\n    -webkit-padding-start: 0px; }\n    .nav-ul .nav-li {\n      margin-left: 25px;\n      margin-right: 25px; }\n      .nav-ul .nav-li a {\n        font-size: 18px; } }\n", ""]);
 
 // exports
 
@@ -1543,17 +1573,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 var UrlPipe = /** @class */ (function () {
-    function UrlPipe(sanitizer) {
-        this.sanitizer = sanitizer;
+    function UrlPipe(sanitized) {
+        this.sanitized = sanitized;
     }
-    UrlPipe.prototype.transform = function (url) {
-        // url = url.replace("watch?v=", "embed/");
-        // console.log('yo');
-        // console.log(url);
-        return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    UrlPipe.prototype.transform = function (value) {
+        return this.sanitized.bypassSecurityTrustHtml(value);
     };
     UrlPipe = __decorate([
-        core_1.Pipe({ name: 'UrlPipe' }),
+        core_1.Pipe({ name: "UrlPipe" }),
         __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
     ], UrlPipe);
     return UrlPipe;
