@@ -255,16 +255,14 @@ var AboutComponent = /** @class */ (function () {
     }
     AboutComponent.prototype.ngOnInit = function () {
         this._globalService.setLoading(true);
-        console.log("ng on init");
         if (!this.feed) {
             this.getPage(0);
         }
     };
     AboutComponent.prototype.parseHref = function (text) {
-        // for each span that is listed as a link
         var spans = text.value["0"].spans;
         var returnText = text.value["0"].text;
-        console.log(spans);
+        // console.log(spans);
         if (spans.length > 0) {
             var counter_1 = 0;
             spans.forEach(function (i) {
@@ -290,15 +288,8 @@ var AboutComponent = /** @class */ (function () {
         this._feedService.getFeed("information", page).subscribe(function (feed) {
             if (page == 0) {
                 _this.feed = feed;
-                console.log("in feed");
-                console.log(_this.feed);
                 _this.filteredText = _this.parseHref(feed.results["0"].data.information.background);
-                console.log(_this.filteredText);
-                //
                 _this._globalService.setLoading(false);
-            }
-            else {
-                console.log("in else block");
             }
         }, function (error) {
             console.log("there was an error");
@@ -459,6 +450,7 @@ var AppModule = /** @class */ (function () {
                 feed_detail_component_1.FeedDetailComponent,
                 encodeURI_pipe_1.EncodeURIPipe,
                 url_pipe_1.UrlPipe,
+                url_pipe_1.VideoPipe,
                 featured_component_1.FeaturedComponent
                 // SafePipe
             ],
@@ -470,12 +462,32 @@ var AppModule = /** @class */ (function () {
                 ng2_responsive_1.ResponsiveModule,
                 shared_module_1.SharedModule,
                 router_1.RouterModule.forRoot([
-                    { path: '', component: feed_component_1.FeedComponent, pathMatch: 'full', data: { state: 'home' } },
-                    { path: 'portfolio', component: featured_component_1.FeaturedComponent, pathMatch: 'full', data: { state: 'featured' } },
-                    { path: 'portfolio/:id', component: feed_detail_component_1.FeedDetailComponent, pathMatch: 'full', data: { state: 'detail' } },
-                    { path: 'about', component: about_component_1.AboutComponent, pathMatch: 'full', data: { state: 'about' } },
-                    { path: '**', redirectTo: '', pathMatch: 'full' }
-                ]),
+                    {
+                        path: "",
+                        component: feed_component_1.FeedComponent,
+                        pathMatch: "full",
+                        data: { state: "home" }
+                    },
+                    {
+                        path: "portfolio",
+                        component: featured_component_1.FeaturedComponent,
+                        pathMatch: "full",
+                        data: { state: "featured" }
+                    },
+                    {
+                        path: "portfolio/:id",
+                        component: feed_detail_component_1.FeedDetailComponent,
+                        pathMatch: "full",
+                        data: { state: "detail" }
+                    },
+                    {
+                        path: "about",
+                        component: about_component_1.AboutComponent,
+                        pathMatch: "full",
+                        data: { state: "about" }
+                    },
+                    { path: "**", redirectTo: "", pathMatch: "full" }
+                ])
             ],
             providers: [variables_service_1.GlobalService],
             bootstrap: [app_component_1.AppComponent]
@@ -573,7 +585,7 @@ exports.FeaturedComponent = FeaturedComponent;
 /***/ "../../../../../src/app/feed/feed-detail/feed-detail.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"detail-wrap\">\n  <div class=\"detail\" *ngIf=\"detail\">\n    <div class=\"iframe-container\">\n      <iframe  class=\"video\" [src]=\"transformUrl(detail.data['portfolio-video'].video_link.value.url) | UrlPipe\" frameborder=\"0\" allowfullscreen>></iframe>\n    </div>\n\n    <div class=\"text-wrap\">\n      <div class=\"left-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.video_title.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.video_year.value[\"0\"].text}}</p>\n      </div>\n\n      <div class=\"right-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.director_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.dp_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.producer_credits.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class=\"detail-wrap\">\n  <div class=\"detail\" *ngIf=\"detail\">\n    <div class=\"iframe-container\">\n      <iframe  class=\"video\" [src]=\"transformUrl(detail.data['portfolio-video'].video_link.value.url) | VideoPipe\" frameborder=\"0\" allowfullscreen>></iframe>\n    </div>\n\n    <div class=\"text-wrap\">\n      <div class=\"left-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.video_title.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.video_year.value[\"0\"].text}}</p>\n      </div>\n\n      <div class=\"right-text\">\n        <p>{{detail.data[\"portfolio-video\"]?.director_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.dp_credits.value[\"0\"].text}}</p>\n        <p>{{detail.data[\"portfolio-video\"]?.producer_credits.value[\"0\"].text}}</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -627,17 +639,18 @@ var FeedDetailComponent = /** @class */ (function () {
     };
     FeedDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var id = this._route.snapshot.params['id'];
+        var id = this._route.snapshot.params["id"];
         var type = this._route.snapshot.url["0"].path;
         console.log(type, id);
-        this._feedService.getSingle('portfolio-video', id)
-            .subscribe(function (data) { return _this.detail = data; }, function (error) { return _this.error = error; });
+        this._feedService
+            .getSingle("portfolio-video", id)
+            .subscribe(function (data) { return (_this.detail = data); }, function (error) { return (_this.error = error); });
         console.log(this.detail);
-        console.log('how did we do?');
+        console.log("how did we do?");
     };
     FeedDetailComponent = __decorate([
         core_1.Component({
-            selector: 'app-feed-detail',
+            selector: "app-feed-detail",
             template: __webpack_require__("../../../../../src/app/feed/feed-detail/feed-detail.component.html"),
             styles: [__webpack_require__("../../../../../src/app/feed/feed-detail/feed-detail.component.scss")]
         }),
@@ -1443,25 +1456,26 @@ __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
 var PrismicService = /** @class */ (function () {
     function PrismicService(_http) {
         this._http = _http;
-        this._getUrl = 'api/prismic/get/';
+        this._getUrl = "api/prismic/get/";
     }
     PrismicService.prototype.getFeed = function (type, page) {
-        console.log(type, page);
-        return this._http.get(this._getUrl + 'all?page=' + page + '&type=' + type)
+        // console.log(type, page)
+        return (this._http
+            .get(this._getUrl + "all?page=" + page + "&type=" + type)
             .map(function (response) { return response.json(); })
-            .do(function (data) { return console.log(data); })
-            .catch(this.handleError);
+            .catch(this.handleError));
     };
     PrismicService.prototype.getSingle = function (type, uid) {
-        console.log('in prismic service');
-        return this._http.get(this._getUrl + 'single?type=' + type + '&uid=' + uid)
+        // console.log('in prismic service');
+        return this._http
+            .get(this._getUrl + "single?type=" + type + "&uid=" + uid)
             .map(function (response) { return response.json(); })
             .do(function (data) { return console.log(data); })
             .catch(this.handleError);
     };
     PrismicService.prototype.handleError = function (error) {
         console.log("error", error);
-        return Observable_1.Observable.throw(error.json().error || 'Server error');
+        return Observable_1.Observable.throw(error.json().error || "Server error");
     };
     PrismicService = __decorate([
         core_1.Injectable(),
@@ -1586,6 +1600,20 @@ var UrlPipe = /** @class */ (function () {
     return UrlPipe;
 }());
 exports.UrlPipe = UrlPipe;
+var VideoPipe = /** @class */ (function () {
+    function VideoPipe(sanitizer) {
+        this.sanitizer = sanitizer;
+    }
+    VideoPipe.prototype.transform = function (url) {
+        return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    };
+    VideoPipe = __decorate([
+        core_1.Pipe({ name: "VideoPipe" }),
+        __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
+    ], VideoPipe);
+    return VideoPipe;
+}());
+exports.VideoPipe = VideoPipe;
 
 
 /***/ }),

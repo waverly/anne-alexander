@@ -32,17 +32,15 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this._globalService.setLoading(true);
-    console.log("ng on init");
     if (!this.feed) {
       this.getPage(0);
     }
   }
 
   parseHref(text) {
-    // for each span that is listed as a link
     const spans = text.value["0"].spans;
     let returnText = text.value["0"].text;
-    console.log(spans);
+    // console.log(spans);
     if (spans.length > 0) {
       let counter = 0;
       spans.forEach(i => {
@@ -72,18 +70,10 @@ export class AboutComponent implements OnInit {
       feed => {
         if (page == 0) {
           this.feed = feed;
-          console.log("in feed");
-          console.log(this.feed);
           this.filteredText = this.parseHref(
             feed.results["0"].data.information.background
           );
-          console.log(this.filteredText);
-
-          //
-
           this._globalService.setLoading(false);
-        } else {
-          console.log("in else block");
         }
       },
       error => {

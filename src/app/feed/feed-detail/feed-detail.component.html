@@ -1,7 +1,7 @@
 <div class="detail-wrap">
   <div class="detail" *ngIf="detail">
     <div class="iframe-container">
-      <iframe  class="video" [src]="transformUrl(detail.data['portfolio-video'].video_link.value.url) | UrlPipe" frameborder="0" allowfullscreen>></iframe>
+      <iframe  class="video" [src]="transformUrl(detail.data['portfolio-video'].video_link.value.url) | VideoPipe" frameborder="0" allowfullscreen>></iframe>
     </div>
 
     <div class="text-wrap">
